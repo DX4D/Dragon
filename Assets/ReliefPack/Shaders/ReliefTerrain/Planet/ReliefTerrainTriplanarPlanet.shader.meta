@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 60a52f67aff72cb4fa47c5360093cc80
+timeCreated: 1452160634
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _SplatA0: {instanceID: 0}
+  - _SplatA1: {instanceID: 0}
+  - _SplatA2: {instanceID: 0}
+  - _SplatA3: {instanceID: 0}
+  - _BumpMap01: {instanceID: 0}
+  - _BumpMap23: {instanceID: 0}
+  - _TERRAIN_HeightMap: {instanceID: 0}
+  - _ColorMapGlobal: {instanceID: 0}
+  - _NormalMapGlobal: {instanceID: 0}
+  - _BumpMapGlobal: {instanceID: 0}
+  - _VerticalTexture: {instanceID: 0}
+  - _SparkleMap: {fileID: 2800000, guid: 58d91b9c15e76ee489eb634baedb9497, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

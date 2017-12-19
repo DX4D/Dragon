@@ -1,0 +1,963 @@
+fileFormatVersion: 2
+guid: 4e6b3b070120b564d874259c160e88c4
+timeCreated: 1486446331
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CG
+    100002: Head
+    100004: L Calf
+    100006: L Clavicle
+    100008: L Finger0
+    100010: L Finger01
+    100012: L Finger02
+    100014: L Finger1
+    100016: L Finger11
+    100018: L Finger12
+    100020: L Finger2
+    100022: L Finger21
+    100024: L Finger22
+    100026: L Finger3
+    100028: L Finger31
+    100030: L Finger32
+    100032: L Finger4
+    100034: L Finger41
+    100036: L Finger42
+    100038: L Foot
+    100040: L Forearm
+    100042: L Hand
+    100044: L Thigh
+    100046: L UpperArm
+    100048: Neck
+    100050: Object001
+    100052: Pelvis
+    100054: R Calf
+    100056: R Clavicle
+    100058: R Finger0
+    100060: R Finger01
+    100062: R Finger02
+    100064: R Finger1
+    100066: R Finger11
+    100068: R Finger12
+    100070: R Finger2
+    100072: R Finger21
+    100074: R Finger22
+    100076: R Finger3
+    100078: R Finger31
+    100080: R Finger32
+    100082: R Finger4
+    100084: R Finger41
+    100086: R Finger42
+    100088: R Foot
+    100090: R Forearm
+    100092: R Hand
+    100094: R Thigh
+    100096: R UpperArm
+    100098: //RootNode
+    100100: Spine
+    100102: Spine1
+    100104: Horse1
+    100106: Horsi_ Head
+    100108: Horsi_ L Calf
+    100110: Horsi_ L Clavicle
+    100112: Horsi_ L Foot
+    100114: Horsi_ L Forearm
+    100116: Horsi_ L Hand
+    100118: Horsi_ L HorseLink
+    100120: Horsi_ L Thigh
+    100122: Horsi_ L UpperArm
+    100124: Horsi_ Neck
+    100126: Horsi_ Neck1
+    100128: Horsi_ Pelvis
+    100130: Horsi_ R Calf
+    100132: Horsi_ R Clavicle
+    100134: Horsi_ R Foot
+    100136: Horsi_ R Forearm
+    100138: Horsi_ R Hand
+    100140: Horsi_ R HorseLink
+    100142: Horsi_ R Thigh
+    100144: Horsi_ R UpperArm
+    100146: Horsi_ Spine
+    100148: Horsi_ Spine1
+    100150: Horsi_ Spine2
+    100152: Horsi_ Tail
+    100154: Horsi_ Tail1
+    100156: Horsi_ Tail2
+    100158: Horsi_ Tail3
+    100160: Horsi_CG
+    100162: Horsi_Ear L
+    100164: Horsi_Ear R
+    100166: Horsi_Jaw
+    100168: RiderLink
+    100170: RiderParent
+    400000: CG
+    400002: Head
+    400004: L Calf
+    400006: L Clavicle
+    400008: L Finger0
+    400010: L Finger01
+    400012: L Finger02
+    400014: L Finger1
+    400016: L Finger11
+    400018: L Finger12
+    400020: L Finger2
+    400022: L Finger21
+    400024: L Finger22
+    400026: L Finger3
+    400028: L Finger31
+    400030: L Finger32
+    400032: L Finger4
+    400034: L Finger41
+    400036: L Finger42
+    400038: L Foot
+    400040: L Forearm
+    400042: L Hand
+    400044: L Thigh
+    400046: L UpperArm
+    400048: Neck
+    400050: Object001
+    400052: Pelvis
+    400054: R Calf
+    400056: R Clavicle
+    400058: R Finger0
+    400060: R Finger01
+    400062: R Finger02
+    400064: R Finger1
+    400066: R Finger11
+    400068: R Finger12
+    400070: R Finger2
+    400072: R Finger21
+    400074: R Finger22
+    400076: R Finger3
+    400078: R Finger31
+    400080: R Finger32
+    400082: R Finger4
+    400084: R Finger41
+    400086: R Finger42
+    400088: R Foot
+    400090: R Forearm
+    400092: R Hand
+    400094: R Thigh
+    400096: R UpperArm
+    400098: //RootNode
+    400100: Spine
+    400102: Spine1
+    400104: Horse1
+    400106: Horsi_ Head
+    400108: Horsi_ L Calf
+    400110: Horsi_ L Clavicle
+    400112: Horsi_ L Foot
+    400114: Horsi_ L Forearm
+    400116: Horsi_ L Hand
+    400118: Horsi_ L HorseLink
+    400120: Horsi_ L Thigh
+    400122: Horsi_ L UpperArm
+    400124: Horsi_ Neck
+    400126: Horsi_ Neck1
+    400128: Horsi_ Pelvis
+    400130: Horsi_ R Calf
+    400132: Horsi_ R Clavicle
+    400134: Horsi_ R Foot
+    400136: Horsi_ R Forearm
+    400138: Horsi_ R Hand
+    400140: Horsi_ R HorseLink
+    400142: Horsi_ R Thigh
+    400144: Horsi_ R UpperArm
+    400146: Horsi_ Spine
+    400148: Horsi_ Spine1
+    400150: Horsi_ Spine2
+    400152: Horsi_ Tail
+    400154: Horsi_ Tail1
+    400156: Horsi_ Tail2
+    400158: Horsi_ Tail3
+    400160: Horsi_CG
+    400162: Horsi_Ear L
+    400164: Horsi_Ear R
+    400166: Horsi_Jaw
+    400168: RiderLink
+    400170: RiderParent
+    4300000: Object001
+    4300002: Horse1
+    7400000: HGet Hit Right
+    7400002: HGet Hit Front Right
+    7400004: HGet Hit Back Right
+    7400006: HGet Hit Left
+    7400008: HGet Hit Front Left
+    7400010: HGet Hit Back Left
+    9500000: //RootNode
+    13700000: Object001
+    13700002: Horse1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HGet Hit Right
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HGet Hit Front Right
+      takeName: Take 001
+      firstFrame: 68
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HGet Hit Back Right
+      takeName: Take 001
+      firstFrame: 122
+      lastFrame: 166
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HGet Hit Left
+      takeName: Take 001
+      firstFrame: 168
+      lastFrame: 232
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HGet Hit Front Left
+      takeName: Take 001
+      firstFrame: 236
+      lastFrame: 288
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HGet Hit Back Left
+      takeName: Take 001
+      firstFrame: 291
+      lastFrame: 344
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse1
+        weight: 1
+      - path: Horsi_CG
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ L Thigh/Horsi_ L Calf/Horsi_
+          L HorseLink/Horsi_ L Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ R Thigh/Horsi_ R Calf/Horsi_
+          R HorseLink/Horsi_ R Foot
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ L Clavicle/Horsi_ L UpperArm/Horsi_ L Forearm/Horsi_ L Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear L
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Ear R
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ Neck1/Horsi_ Head/Horsi_Jaw
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
+          Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2
+        weight: 1
+      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Tail/Horsi_ Tail1/Horsi_
+          Tail2/Horsi_ Tail3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Horsi_CG
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 267508c9d6a3c0445ac3c217bd110db3,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

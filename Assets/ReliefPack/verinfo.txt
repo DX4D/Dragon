@@ -1,0 +1,3 @@
+RTP3.3j for U5.5 & U5.6 (submitted from Unity5.5.0p3)
+
+This version has been also roughly checked for compatibility issues using U2017.1.0b9

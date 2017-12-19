@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010943811254}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010943811254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000010563517732}
+  - component: {fileID: 114000011641224332}
+  m_Layer: 0
+  m_Name: Pistol Left Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013745724980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000013280387270}
+  - component: {fileID: 33000011048522258}
+  - component: {fileID: 23000010556299978}
+  m_Layer: 0
+  m_Name: Pistol CowBoy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010563517732
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010943811254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.892313, y: 14.537739, z: -13.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4000013280387270}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4000013280387270
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013745724980}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.08468628, y: 0, z: 0.0085020065}
+  m_LocalScale: {x: 1.1838584, y: 1.1838583, z: 1.1838578}
+  m_Children: []
+  m_Father: {fileID: 4000010563517732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!23 &23000010556299978
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013745724980}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 29534d89a52192c4aa7c674daa188102, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &33000011048522258
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013745724980}
+  m_Mesh: {fileID: 4300000, guid: 47d0342201348df4e9f66088c097fa01, type: 3}
+--- !u!114 &114000011641224332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010943811254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0276d362e722d3d4dba5e1e744c887c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponID: 77568
+  minDamage: 10
+  maxDamage: 20
+  minForce: 500
+  maxForce: 1000
+  rightHand: 0
+  holder: 2
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 0
+  positionOffset: {x: -0.096, y: 0.015, z: -0.093}
+  rotationOffset: {x: 180, y: 0, z: 0}
+  Sounds:
+  - {fileID: 8300000, guid: 1daf9bc6974ab5c46a334c0a9f30f05f, type: 3}
+  - {fileID: 8300000, guid: 8a24f8d36df76604c848149f255c4bed, type: 3}
+  - {fileID: 8300000, guid: 80601341be591a84da83da64ecf51265, type: 3}
+  - {fileID: 8300000, guid: b2318f3feaaa94241acd327f94bd3ec2, type: 3}
+  - {fileID: 8300000, guid: eb1493d1ce356ec45b1e4f44ea5314ca, type: 3}
+  WeaponSound: {fileID: 0}
+  OnEquiped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MalbersAnimations.Weapons.WeaponEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnUnequiped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MalbersAnimations.Weapons.WeaponEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ShowEventEditor: 0
+  Ammo: 30
+  ammoInChamber: 20
+  ClipSize: 20
+  isAutomatic: 1
+  bulletHole: {fileID: 190716, guid: 58b3b7a5c5273e24aa8931f09e57c303, type: 2}
+  BulletHoleTime: 10
+  OnFire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MalbersAnimations.Events.Vector3Event, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnReload:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MalbersAnimations.Events.TransformEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnAiming:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MalbersAnimations.Events.BoolEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

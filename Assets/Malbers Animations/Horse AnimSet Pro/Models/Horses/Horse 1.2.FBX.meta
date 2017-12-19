@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 2046927f34611ee4585c1c0a1e249c08
+timeCreated: 1462644888
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armor_LD
+    100002: Hair LOD1
+    100004: Horse
+    100006: //RootNode
+    100008: Horse LOD1
+    100010: HorseHair001
+    100012: Horsi_ Head
+    100014: Horsi_ L Calf
+    100016: Horsi_ L Clavicle
+    100018: Horsi_ L Foot
+    100020: Horsi_ L Forearm
+    100022: Horsi_ L Hand
+    100024: Horsi_ L HorseLink
+    100026: Horsi_ L Thigh
+    100028: Horsi_ L UpperArm
+    100030: Horsi_ Neck
+    100032: Horsi_ Neck1
+    100034: Horsi_ Pelvis
+    100036: Horsi_ R Calf
+    100038: Horsi_ R Clavicle
+    100040: Horsi_ R Foot
+    100042: Horsi_ R Forearm
+    100044: Horsi_ R Hand
+    100046: Horsi_ R HorseLink
+    100048: Horsi_ R Thigh
+    100050: Horsi_ R UpperArm
+    100052: Horsi_ Spine
+    100054: Horsi_ Spine1
+    100056: Horsi_ Spine2
+    100058: Horsi_ Tail
+    100060: Horsi_ Tail1
+    100062: Horsi_ Tail2
+    100064: Horsi_ Tail3
+    100066: Horsi_CG
+    100068: Horsi_Ear L
+    100070: Horsi_Ear R
+    100072: Horsi_Jaw
+    100074: Mount
+    100076: Mount LOD1
+    100078: RiderLink
+    100080: RiderParent
+    100082: StridesC
+    100084: StridesL
+    100086: StridesR
+    100088: Horse1
+    100090: Rendas
+    100092: StridesCL
+    100094: StridesCR
+    400000: Armor_LD
+    400002: Hair LOD1
+    400004: Horse
+    400006: //RootNode
+    400008: Horse LOD1
+    400010: HorseHair001
+    400012: Horsi_ Head
+    400014: Horsi_ L Calf
+    400016: Horsi_ L Clavicle
+    400018: Horsi_ L Foot
+    400020: Horsi_ L Forearm
+    400022: Horsi_ L Hand
+    400024: Horsi_ L HorseLink
+    400026: Horsi_ L Thigh
+    400028: Horsi_ L UpperArm
+    400030: Horsi_ Neck
+    400032: Horsi_ Neck1
+    400034: Horsi_ Pelvis
+    400036: Horsi_ R Calf
+    400038: Horsi_ R Clavicle
+    400040: Horsi_ R Foot
+    400042: Horsi_ R Forearm
+    400044: Horsi_ R Hand
+    400046: Horsi_ R HorseLink
+    400048: Horsi_ R Thigh
+    400050: Horsi_ R UpperArm
+    400052: Horsi_ Spine
+    400054: Horsi_ Spine1
+    400056: Horsi_ Spine2
+    400058: Horsi_ Tail
+    400060: Horsi_ Tail1
+    400062: Horsi_ Tail2
+    400064: Horsi_ Tail3
+    400066: Horsi_CG
+    400068: Horsi_Ear L
+    400070: Horsi_Ear R
+    400072: Horsi_Jaw
+    400074: Mount
+    400076: Mount LOD1
+    400078: RiderLink
+    400080: RiderParent
+    400082: StridesC
+    400084: StridesL
+    400086: StridesR
+    400088: Horse1
+    400090: Rendas
+    400092: StridesCL
+    400094: StridesCR
+    4300000: HorseHair001
+    4300002: Mount
+    4300004: Horse LOD1
+    4300006: Mount LOD1
+    4300008: Hair LOD1
+    4300010: Armor_LD
+    4300012: Horse1
+    4300014: Rendas
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Armor_LD
+    13700002: Hair LOD1
+    13700004: Horse LOD1
+    13700006: HorseHair001
+    13700008: Mount
+    13700010: Mount LOD1
+    13700012: Horse1
+    13700014: Rendas
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Horsi_CG
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

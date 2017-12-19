@@ -1,0 +1,38 @@
+RTP3.3j
+
+- fixed obsolete webPlayer error thrown in example scene script in newest Unity
+
+RTP3.3i
+
+- fixed console error when saving atlas
+- consistent sRGB flag when saving to texture (combined textures & atlas)
+
+RTP3.3h
+
+- fixed customizable shaders with wetness (missing BIAS texture samplers)
+- directional light cookie causing shader output undefined (black terrain)
+
+RTP3.3g
+
+- PS4 shader compilation fix
+- Vulkan shader compilation fix
+- OpenGL (glcore) checks
+- Geom blend objects correctly take underlying terrain lightmap scale offset for both baked and realtime GI
+- Fixed black terrain after lightmapping
+
+RTP3.3f
+
+- Unity5.6b10 tested
+- fixed crosspass heightblending issue
+- fixed preset restore issue in builds
+- fixed Standard geom blend shader (specular and metallic)
+- fixed colorspace set to sRGB (color) for globalcolormap being painted when we're in Linear lighting
+- sRGB unchecked by default when using height&normals texture generator tool
+
+RTP3.3e
+
+- U5.5b6 compatibility
+- reuse texture samplers for most DX10+ platforms should solve problem of "16 samplers limit exceeded"
+- option in LOD manager to exclude deferred path (terrain rendered always in forward)
+- fixed geom blend standard shader
+- fixed web gl build causing erros due to substance code present

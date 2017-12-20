@@ -17009,7 +17009,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[13].name
-      value: Speed3
+      value: Speed2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17024,77 +17024,77 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[13].key
-      value: 338
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[13].GetPressed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[13].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[0].type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[0].input
-      value: Value
+      value: Fire1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[0].key
-      value: 333
+      value: 332
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[0].GetPressed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].name
-      value: Fly
+      value: Attack2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].input
-      value: Value
+      value: Fire2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[2].name
-      value: Jump
+      value: Attack3
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[2].input
-      value: Jump
+      value: Fire3
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[3].name
-      value: Jump
+      value: Shift
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[3].input
-      value: Value
+      value: Fire3
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[3].key
-      value: 330
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[4].name
-      value: Shift
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17104,7 +17104,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[4].input
-      value: Fire3
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17119,47 +17119,47 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[5].name
-      value: Shift
+      value: Dodge
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[5].key
-      value: 334
+      value: 331
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[6].name
-      value: Attack1
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[6].key
-      value: 332
+      value: 333
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[7].name
-      value: Attack1
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[7].key
-      value: 0
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[7].GetPressed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[8].name
-      value: Attack2
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[8].key
-      value: 335
+      value: 330
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17169,32 +17169,32 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[9].name
-      value: Attack2
+      value: Attack1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[9].key
-      value: 107
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[10].name
-      value: Speed1
+      value: Attack2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[10].key
-      value: 338
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[10].GetPressed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[11].active
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17204,7 +17204,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[11].key
-      value: 49
+      value: 338
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17214,12 +17214,12 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[12].name
-      value: Speed2
+      value: Speed1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[12].key
-      value: 50
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17239,17 +17239,17 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[14].key
-      value: 51
+      value: 338
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[14].GetPressed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[14].active
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17264,7 +17264,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[15].name
-      value: Action
+      value: Speed3
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17279,12 +17279,12 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[15].key
-      value: 101
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[15].GetPressed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17299,7 +17299,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[16].name
-      value: Dodge
+      value: Action
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17314,7 +17314,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[16].key
-      value: 331
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17324,32 +17324,32 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[16].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[0].name
-      value: Fly
+      value: Attack1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].key
-      value: 113
+      value: 335
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[5].type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[5].input
-      value: Value
+      value: Dodge
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17359,7 +17359,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].GetPressed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17369,27 +17369,27 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[2].key
-      value: 0
+      value: 334
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[6].type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[6].input
-      value: Value
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[6].GetPressed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[1].active
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17404,7 +17404,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[8].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17419,7 +17419,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[4].active
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17484,7 +17484,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[19].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17519,17 +17519,17 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[7].type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[7].input
-      value: Fire2
+      value: Value
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[10].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17579,7 +17579,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[9].input
-      value: Fire1
+      value: Fire2
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17679,7 +17679,7 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[2].active
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
@@ -17689,7 +17689,32 @@ Prefab:
     - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
         type: 2}
       propertyPath: inputs.Array.data[3].type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
+        type: 2}
+      propertyPath: inputs.Array.data[0].active
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
+        type: 2}
+      propertyPath: inputs.Array.data[2].GetPressed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
+        type: 2}
+      propertyPath: inputs.Array.data[3].GetPressed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
+        type: 2}
+      propertyPath: inputs.Array.data[10].type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604360227401184, guid: 86d538fa4ecbaad4bb49e50876d6190b,
+        type: 2}
+      propertyPath: inputs.Array.data[10].input
+      value: Fire1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86d538fa4ecbaad4bb49e50876d6190b, type: 2}
@@ -18785,6 +18810,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1169389449}
+  - component: {fileID: 1169389450}
   m_Layer: 0
   m_Name: Camera Target
   m_TagString: Untagged
@@ -18805,6 +18831,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169389450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169389448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246cc59c7a84ea44f87f6b70acfe30c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  offset: {x: 0, y: 7.5, z: 0}
+  invertLookAxis: 0
+  lookSensitivity: 1
+  lookHorizontalAngle: 180
+  minCameraHeight: 0
+  maxCameraHeight: 10
 --- !u!1 &1176944030
 GameObject:
   m_ObjectHideFlags: 0
@@ -21764,7 +21808,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1202457245}
-  offset: {x: 0, y: 7.5, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  invertLookAxis: 1
+  lookSensitivity: 1
+  lookHorizontalAngle: 150
+  minCameraHeight: 0
+  maxCameraHeight: 25
 --- !u!114 &1824273747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21820,7 +21869,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1824273745}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b21bf91934c8904b928823c0c7019ad, type: 3}
   m_Name: 

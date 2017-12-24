@@ -133,12 +133,12 @@ namespace MalbersAnimations.HAP
             if (RightHorse)
             {
                 RightHorse.transform.rotation = transform.rotation; //Make sure the horse keeps  the transform rotation
-                RightHorse.transform.rotation = Quaternion.FromToRotation(RightHorse.transform.up, RightHorse.SurfaceNormal) * RightHorse._RigidBody.rotation;  //Calculate the orientation to Terrain  
+                RightHorse.transform.rotation = Quaternion.FromToRotation(RightHorse.transform.up, RightHorse.SurfaceNormal) * RightHorse.transform.rotation;  //Calculate the orientation to Terrain  
             }
             if (LeftHorse) //Make sure the horse keeps  the transform rotation
             {
                 LeftHorse.transform.rotation = transform.rotation;
-                LeftHorse.transform.rotation = Quaternion.FromToRotation(LeftHorse.transform.up, LeftHorse.SurfaceNormal) * LeftHorse._RigidBody.rotation;  //Calculate the orientation to Terrain  
+                LeftHorse.transform.rotation = Quaternion.FromToRotation(LeftHorse.transform.up, LeftHorse.SurfaceNormal) * LeftHorse.transform.rotation;  //Calculate the orientation to Terrain  
             }
 
             if (LeftHorse && LeftHorse != RightHorse)                       //if is there a different left horse

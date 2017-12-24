@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using UnityEditor.Animations;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace MalbersAnimations
 {
@@ -20,14 +23,31 @@ namespace MalbersAnimations
 
             life, defense, attackStrength, FallRayMultiplier, debug, attackTotal, attackDelay, activeAttack, damageInterrupt,
 
-            FlySpeed, upDownSmoothness, StartFlying , land;
+            FlySpeed, upDownSmoothness, StartFlying, land;
 
+        AnimatorController controller;
+        List<AnimatorControllerParameter> parameters;
         private void OnEnable()
         {
             myAnimal = (Animal)target;
             script = MonoScript.FromMonoBehaviour(myAnimal);
             FindProperties();
+
+            controller = (AnimatorController)myAnimal.Anim.runtimeAnimatorController;
+            parameters = controller.parameters.ToList(); ///
         }
+
+        bool FindParameter(int ParameterHash, AnimatorControllerParameterType Ptype)
+        {
+            if (parameters != null)
+            {
+                AnimatorControllerParameter founded = parameters.Find(item => item.nameHash == ParameterHash && item.type == Ptype);
+
+                if (founded != null)   return true;
+            }
+            return false;
+        }
+
 
         protected void FindProperties()
         {
@@ -120,25 +140,21 @@ namespace MalbersAnimations
                 myAnimal.canFly = GUILayout.Toggle( myAnimal.canFly, new GUIContent("Can Fly", "Activate the Fly Logic\nif the Animator Controller of this animal does not have a 'Fly' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours"), EditorStyles.miniButton);
                 EditorGUILayout.EndHorizontal();
 
-                //if (myAnimal.canFly)
-                //{
-                //    bool hasfly = Utilities.MalbersTools.FindAnimatorParameter(myAnimal.Anim, UnityEngine.AnimatorControllerParameterType.Bool, Hash.Fly);
+                if (myAnimal.canFly)
+                {
+                    if (!FindParameter(Hash.Fly, AnimatorControllerParameterType.Bool))
+                    {
+                        EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Fly' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
+                    }
+                }
 
-                //    if (!hasfly && myAnimal.gameObject.activeSelf)
-                //    {
-                //        EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Fly' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
-                //    }
-                //}
-
-                //if (myAnimal.canSwim)
-                //{
-                //    bool hasswim = Utilities.MalbersTools.FindAnimatorParameter(myAnimal.Anim, UnityEngine.AnimatorControllerParameterType.Bool, Hash.Swim);
-
-                //    if (!hasswim && myAnimal.gameObject.activeSelf)
-                //    {
-                //        EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Swim' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
-                //    }
-                //}
+                if (myAnimal.canSwim)
+                {
+                    if (!FindParameter(Hash.Swim, AnimatorControllerParameterType.Bool))
+                    {
+                        EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Swim' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
+                    }
+                }
 
 
                 EditorGUILayout.EndVertical();
@@ -178,19 +194,15 @@ namespace MalbersAnimations
 
                     if (myAnimal.CanGoUnderWater)
                     {
-                        //if (myAnimal.CanGoUnderWater)
-                        //{
-                        //    bool hasUnderwater = Utilities.MalbersTools.FindAnimatorParameter(myAnimal.Anim, UnityEngine.AnimatorControllerParameterType.Bool, Hash.Underwater);
-
-                        //    if (!hasUnderwater && myAnimal.gameObject.activeSelf)
-                        //    {
-                        //        EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Underwater' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
-                        //    }
-                        //}
+                        if (myAnimal.CanGoUnderWater)
+                        {
+                            if (!FindParameter(Hash.Underwater, AnimatorControllerParameterType.Bool))
+                            {
+                                EditorGUILayout.HelpBox("The Animator Controller of this animal does not have a 'Underwater' Bool Parameter\nThis option should be disabled\nIt might cause unwanted behaviours", MessageType.Warning);
+                            }
+                        }
 
                         DrawSpeed(underWaterSpeed, "UnderWater");
-
-
                     }
                 }
                 EditorGUILayout.EndVertical();

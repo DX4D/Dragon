@@ -44,7 +44,6 @@ namespace MalbersAnimations
                 animal.Tired++;
                 if (animal.Tired >= animal.GotoSleep)
                 {
-                    
                     animal.SetIntID(transitionID);  //Get to the Sleep Mode
                     animal.Tired = 0;
                 }

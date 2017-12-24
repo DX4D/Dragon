@@ -21,7 +21,10 @@ namespace MalbersAnimations.HAP
 
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            animator.SetInteger(Hash.MountSide, 0);                //remove the side of the mounted ****IMPORTANT
+
             rider = animator.GetComponent<Rider3rdPerson>();
+
             transform = animator.transform;
             hip = animator.GetBoneTransform(HumanBodyBones.Hips);
 
@@ -37,7 +40,6 @@ namespace MalbersAnimations.HAP
 
             Fix = rider.MountTrigger.Adjustment;            //Store the Fix
           
-            animator.SetInteger(Hash.MountSide, 0);                //remove the side of the mounted
 
             rider.Start_Mounting();
         }
@@ -48,27 +50,24 @@ namespace MalbersAnimations.HAP
             //transform.position = animator.rootPosition;
             transform.rotation = animator.rootRotation;
 
-            Vector3 Rider_Position = transform.position;
             Vector3 Mount_Position = rider.Montura.MountPoint.position;
 
             //Smootly move to the Mount Start Position && rotation
             if (stateInfo.normalizedTime < toMountPoint)
             {
-                Vector3 NewPos = new Vector3(MountTrigger.position.x, Rider_Position.y, MountTrigger.position.z);
-                transform.position = Vector3.Lerp(Rider_Position, NewPos, stateInfo.normalizedTime / toMountPoint);
+                Vector3 NewPos = new Vector3(MountTrigger.position.x, transform.position.y, MountTrigger.position.z);
+                transform.position = Vector3.Lerp(transform.position, NewPos, stateInfo.normalizedTime / toMountPoint);
 
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(MountTrigger.forward), stateInfo.normalizedTime / toMountPoint);
             }
 
-
             //Smoothy adjust the rider to the Mount Position/Rotation
-
 
             if (Fix)
             {
                 if (!Fix.SeparateAxisPos)
                 {
-                    transform.position = Vector3.LerpUnclamped(Rider_Position, Mount_Position, Fix.PosCurve.Evaluate(stateInfo.normalizedTime));
+                    transform.position = Vector3.LerpUnclamped(transform.position, Mount_Position, Fix.PosCurve.Evaluate(stateInfo.normalizedTime));
                 }
                 else
                 {

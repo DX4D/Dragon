@@ -76,6 +76,8 @@ namespace MalbersAnimations
 
             if (HeadOnly && !other.name.ToLower().Contains("head")) return;     //If is Head Only and no head was found Skip
 
+            animal.ActionID = ID;
+
             if (_colliders.Find(item => item == other) == null)                 //if the entering collider is not already on the list add it
             {
                 _colliders.Add(other);
@@ -90,7 +92,7 @@ namespace MalbersAnimations
             animal.OnAction.AddListener(OnActionListener);                      //Listen when the animal activate the Action Input
 
             OnEnter.Invoke(animal);
-            animal.ActionID = ID;
+         
 
             if (automatic)       //Just activate when is on the Locomotion State if this is automatic
             {

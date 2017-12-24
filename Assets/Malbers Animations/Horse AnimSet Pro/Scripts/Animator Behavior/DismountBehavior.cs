@@ -16,13 +16,16 @@ namespace MalbersAnimations.HAP
         Transform hip;
         Vector3 laspos;
 
+        TransformAnimation Fix;
+
         float ScaleFactor;
 
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            rider = animator.GetComponent<Rider3rdPerson>();
+            animator.SetInteger(Hash.MountSide, 0);                 //remove the side of the mounted **IMPORTANT*** otherwise it will keep trying to dismount
 
+            rider = animator.GetComponent<Rider3rdPerson>();
             ScaleFactor = rider.Montura.Animal.ScaleFactor;                                     //Get the scale Factor from the Montura
 
             Vector3 LeftFoot = animator.GetBoneTransform(HumanBodyBones.LeftFoot).position;
@@ -31,11 +34,12 @@ namespace MalbersAnimations.HAP
             laspos = (LeftFoot + RightFoot) / 2;
             MountPosition = animator.rootPosition;
 
+            Fix = rider.MountTrigger.Adjustment;            //Store the Fix
+
             transform = animator.transform;
             rider.Start_Dismounting();
 
             hip = animator.GetBoneTransform(HumanBodyBones.Hips);   //Get the Hip Bone
-            animator.SetInteger(Hash.MountSide, 0);                 //remove the side of the mounted **IMPORTANT*** otherwise it will keep trying to dismount
         }
 
 
@@ -48,7 +52,7 @@ namespace MalbersAnimations.HAP
         override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             transition = animator.GetAnimatorTransitionInfo(layerIndex);
-            transform.position += (animator.velocity * Time.deltaTime * ScaleFactor);
+            transform.position += (animator.velocity * Time.deltaTime * ScaleFactor * (Fix ? Fix.delay : 1)); //Scale the animations Root Position   and use the delay on it
             // transform.position = animator.rootPosition;
             transform.rotation = animator.rootRotation;
 

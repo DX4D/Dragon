@@ -35,6 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4135386282968820}
   - component: {fileID: 65055461246070240}
+  - component: {fileID: 65496861046725180}
   m_Layer: 20
   m_Name: Horsi_ Head
   m_TagString: Untagged
@@ -496,9 +497,9 @@ GameObject:
   - component: {fileID: 114583553835089228}
   - component: {fileID: 114764473725819796}
   - component: {fileID: 114739793109279298}
-  - component: {fileID: 82555201672908890}
   - component: {fileID: 114389816527968114}
   - component: {fileID: 114743346181739010}
+  - component: {fileID: 82555201672908890}
   m_Layer: 20
   m_Name: Horse MineCraft
   m_TagString: Player
@@ -1149,7 +1150,7 @@ Transform:
   - {fileID: 4165363959159014}
   - {fileID: 4663265239425608}
   m_Father: {fileID: 4536491498777260}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4237034858652820
 Transform:
@@ -1167,7 +1168,7 @@ Transform:
   - {fileID: 4202777970910988}
   - {fileID: 4744423728047466}
   m_Father: {fileID: 4536491498777260}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4242798847981984
 Transform:
@@ -1238,7 +1239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4536491498777260}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 91.09299, y: -0.000015258789, z: -0.000015258789}
 --- !u!4 &4313049967321404
 Transform:
@@ -1473,11 +1474,11 @@ Transform:
   - {fileID: 4045095645942956}
   - {fileID: 4329269269323072}
   - {fileID: 4655960524837028}
+  - {fileID: 4231137034955782}
   - {fileID: 4237034858652820}
   - {fileID: 4284789261865596}
   - {fileID: 4643175585221588}
   - {fileID: 4863571831324564}
-  - {fileID: 4231137034955782}
   - {fileID: 4198368515819190}
   - {fileID: 4393665413865854}
   m_Father: {fileID: 0}
@@ -1533,7 +1534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4536491498777260}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4654374168345222
 Transform:
@@ -1722,7 +1723,7 @@ Transform:
   m_Children:
   - {fileID: 4768906870767186}
   m_Father: {fileID: 4536491498777260}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4883079333842840
 Transform:
@@ -1879,6 +1880,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 1.6276345, z: 1}
   m_Center: {x: 0, y: 0.81381726, z: -0.00000029802322}
+--- !u!65 &65496861046725180
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1013553161904604}
+  m_Material: {fileID: 13400000, guid: 54174b87a6301064ea8788686f85bda8, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30726486, y: 0.8395326, z: 0.28}
+  m_Center: {x: 0.061370656, y: 0.26023433, z: 0.000000010204545}
 --- !u!65 &65526971496469030
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2116,11 +2129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114353619963233998
@@ -2134,11 +2147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114389816527968114
@@ -2152,7 +2165,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51aadafe0cedb841ac535263babb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Meshes: []
+  Meshes:
+  - Name: Armour
+    meshes:
+    - {fileID: 4019671065881786}
+    - {fileID: 0}
+    Current: 0
+  - Name: Saddle
+    meshes:
+    - {fileID: 4663265239425608}
+    - {fileID: 0}
+    Current: 0
   showMeshesList: 1
 --- !u!114 &114437259778141004
 MonoBehaviour:
@@ -2287,7 +2310,7 @@ MonoBehaviour:
   movementS3: 4
   maxAngleSlope: 45
   SlowSlopes: 1
-  GotoSleep: 100
+  GotoSleep: 30
   SnapToGround: 20
   FallRayDistance: 0.18
   FallRayMultiplier: 1.2
@@ -2325,7 +2348,7 @@ MonoBehaviour:
   LockUp: 0
   life: 100
   defense: 0
-  damageDelay: 0.2
+  damageDelay: 2
   damageInterrupt: 2
   TotalAttacks: 3
   activeAttack: -1
@@ -2381,13 +2404,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   EditorGeneral: 1
-  EditorGround: 1
-  EditorWater: 1
+  EditorGround: 0
+  EditorWater: 0
   EditorAir: 1
-  EditorAdvanced: 1
-  EditorAirControl: 1
-  EditorAttributes: 1
-  EditorEvents: 1
+  EditorAdvanced: 0
+  EditorAirControl: 0
+  EditorAttributes: 0
+  EditorEvents: 0
 --- !u!114 &114595615348273470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2431,11 +2454,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114720950977205210
@@ -2484,10 +2507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181eb898d7c8aa441b8df05cec988f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tracks: {fileID: 198905627624542166}
-  Dust: {fileID: 198174738050920334}
+  Tracks: {fileID: 198000013136168986, guid: 70fe502b33f22f9458eee8b3c5b3925b, type: 2}
+  Dust: {fileID: 198000010737321038, guid: f0e05868b149bf947969b4825ba90440, type: 2}
   StepsVolume: 0.2
-  DustParticles: 30
+  DustParticles: 16
   Scale: {x: 1, y: 1, z: 1}
   clips:
   - {fileID: 8300000, guid: 47e7b6f7e3e27e942b73e1d3efa55647, type: 3}
@@ -2515,7 +2538,7 @@ MonoBehaviour:
     - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
     - {fileID: 2100000, guid: 9d562cc3f24219d43bde8957337e5685, type: 2}
     - {fileID: 2100000, guid: 914117cbfb6c3614c8f6989ef4f91448, type: 2}
-    current: 0
+    current: 1
     HasLODs: 0
     LODs: []
     indexM: 0
@@ -2526,7 +2549,7 @@ MonoBehaviour:
     - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
     - {fileID: 2100000, guid: 9d562cc3f24219d43bde8957337e5685, type: 2}
     - {fileID: 2100000, guid: 914117cbfb6c3614c8f6989ef4f91448, type: 2}
-    current: 1
+    current: 2
     HasLODs: 0
     LODs: []
     indexM: 0
@@ -2537,7 +2560,7 @@ MonoBehaviour:
     - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
     - {fileID: 2100000, guid: 9d562cc3f24219d43bde8957337e5685, type: 2}
     - {fileID: 2100000, guid: 914117cbfb6c3614c8f6989ef4f91448, type: 2}
-    current: 1
+    current: 3
     HasLODs: 0
     LODs: []
     indexM: 0
@@ -2553,11 +2576,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114762630839180772
@@ -2603,6 +2626,7 @@ MonoBehaviour:
   RunASpeed: 1
   FlyASpeed: 1
   SwimASpeed: 1
+  DebugSync: 0
   ridersLink: {fileID: 4441909410086862}
   leftIK: {fileID: 4273102698695814}
   rightIK: {fileID: 4609776665166578}
@@ -2647,11 +2671,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114812052345494566
@@ -2880,7 +2904,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f063a4d5134e07b4ea72a477e02b2d3b, type: 2}
+  - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2946,7 +2970,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
+  - {fileID: 2100000, guid: 9d562cc3f24219d43bde8957337e5685, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2993,7 +3017,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5829bd59e29facf46a214ca199066ec8, type: 2}
+  - {fileID: 2100000, guid: 914117cbfb6c3614c8f6989ef4f91448, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

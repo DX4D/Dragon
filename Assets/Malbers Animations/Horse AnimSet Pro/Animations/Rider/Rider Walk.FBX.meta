@@ -57,6 +57,24 @@ ModelImporter:
     100098: //RootNode
     100100: Spine
     100102: Spine1
+    100104: Bip001 Footsteps
+    100106: Bip001 HeadNub
+    100108: Bip001 L Toe0
+    100110: Bip001 L Toe0Nub
+    100112: Bip001 R Toe0Nub
+    100114: CG L Finger0Nub
+    100116: CG L Finger1Nub
+    100118: CG L Finger2Nub
+    100120: CG L Finger3Nub
+    100122: CG L Finger4Nub
+    100124: CG R Finger0Nub
+    100126: CG R Finger1Nub
+    100128: CG R Finger2Nub
+    100130: CG R Finger3Nub
+    100132: CG R Finger4Nub
+    100134: CowBoy
+    100136: R Toe0
+    100138: StridesC
     400000: CG
     400002: Head
     400004: L Calf
@@ -109,12 +127,32 @@ ModelImporter:
     400098: //RootNode
     400100: Spine
     400102: Spine1
+    400104: Bip001 Footsteps
+    400106: Bip001 HeadNub
+    400108: Bip001 L Toe0
+    400110: Bip001 L Toe0Nub
+    400112: Bip001 R Toe0Nub
+    400114: CG L Finger0Nub
+    400116: CG L Finger1Nub
+    400118: CG L Finger2Nub
+    400120: CG L Finger3Nub
+    400122: CG L Finger4Nub
+    400124: CG R Finger0Nub
+    400126: CG R Finger1Nub
+    400128: CG R Finger2Nub
+    400130: CG R Finger3Nub
+    400132: CG R Finger4Nub
+    400134: CowBoy
+    400136: R Toe0
+    400138: StridesC
     4300000: R
+    4300002: CowBoy
     7400000: RWalk
     7400002: RWalkL
     7400004: RWalkR
     9500000: //RootNode
     13700000: R
+    13700002: CowBoy
   materials:
     importMaterials: 0
     materialName: 0
@@ -125,12 +163,28 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'L Thigh'
+      : position error = 104.796661 mm\n\t'R Thigh' : position error = 104.796936
+      mm\n"
     animationImportErrors: 
-    animationImportWarnings: 'Copied Avatar Rig Configuration mis-match. Bone length
-      in copied configuration does not match position in animation file
-
-      Rider Walk'
-    animationRetargetingWarnings: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Take 001':\n\tLeftLowerLeg
+      average position error 104.8 mm and maximum position error 104.9 mm at time
+      0:23 (22.3%) Frame 23\n\tLeftFoot average position error 104.8 mm and maximum
+      position error 104.8 mm at time 0:23 (22.3%) Frame 23\n\tRightLowerLeg average
+      position error 104.8 mm and maximum position error 104.9 mm at time 1:12 (40.8%)
+      Frame 42\n\tRightFoot average position error 104.8 mm and maximum position error
+      104.8 mm at time 1:12 (40.8%) Frame 42\n\tLeftUpperArm average position error
+      314.4 mm and maximum position error 314.4 mm at time 0:15 (14.6%) Frame 15\n\tLeftLowerArm
+      average position error 314.5 mm and maximum position error 314.6 mm at time
+      2:17 (74.8%) Frame 77\n\tLeftHand average position error 314.4 mm and maximum
+      position error 314.4 mm at time 1:14 (42.7%) Frame 44\n\tRightUpperArm average
+      position error 314.4 mm and maximum position error 314.4 mm at time 0:29 (28.2%)
+      Frame 29\n\tRightLowerArm average position error 314.5 mm and maximum position
+      error 314.5 mm at time 1:23 (51.5%) Frame 53\n\tRightHand average position error
+      314.4 mm and maximum position error 314.4 mm at time 0:14 (13.6%) Frame 14\n"
     animationDoRetargetingWarnings: 1
     animationCompression: 0
     animationRotationError: 0.5
@@ -147,13 +201,13 @@ ModelImporter:
       wrapMode: 0
       orientationOffsetY: 0
       level: -0.11
-      cycleOffset: 0
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
-      loopBlendPositionY: 1
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 1
       keepOriginalOrientation: 1
       keepOriginalPositionY: 0
@@ -176,12 +230,16 @@ ModelImporter:
         weight: 1
       - path: CG/Pelvis/L Thigh/L Calf/L Foot
         weight: 1
+      - path: CG/Pelvis/L Thigh/L Calf/L Foot/Bip001 L Toe0
+        weight: 0
       - path: CG/Pelvis/R Thigh
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf/R Foot
         weight: 1
+      - path: CG/Pelvis/R Thigh/R Calf/R Foot/R Toe0
+        weight: 0
       - path: CG/Pelvis/Spine
         weight: 1
       - path: CG/Pelvis/Spine/Spine1
@@ -286,7 +344,7 @@ ModelImporter:
       - path: CG/Pelvis/Spine/Spine1/R Clavicle/R UpperArm/R Forearm/R Hand/R Finger4/R
           Finger41/R Finger42
         weight: 1
-      - path: R
+      - path: CowBoy
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
@@ -295,15 +353,15 @@ ModelImporter:
       name: RWalkL
       takeName: Take 001
       firstFrame: 32
-      lastFrame: 72
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: -0.11
-      cycleOffset: 0
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -328,12 +386,16 @@ ModelImporter:
         weight: 1
       - path: CG/Pelvis/L Thigh/L Calf/L Foot
         weight: 1
+      - path: CG/Pelvis/L Thigh/L Calf/L Foot/Bip001 L Toe0
+        weight: 0
       - path: CG/Pelvis/R Thigh
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf/R Foot
         weight: 1
+      - path: CG/Pelvis/R Thigh/R Calf/R Foot/R Toe0
+        weight: 0
       - path: CG/Pelvis/Spine
         weight: 1
       - path: CG/Pelvis/Spine/Spine1
@@ -438,7 +500,7 @@ ModelImporter:
       - path: CG/Pelvis/Spine/Spine1/R Clavicle/R UpperArm/R Forearm/R Hand/R Finger4/R
           Finger41/R Finger42
         weight: 1
-      - path: R
+      - path: CowBoy
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
@@ -447,11 +509,11 @@ ModelImporter:
       name: RWalkR
       takeName: Take 001
       firstFrame: 80
-      lastFrame: 112
+      lastFrame: 103
       wrapMode: 0
       orientationOffsetY: 0
       level: -0.11
-      cycleOffset: 0
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -480,12 +542,16 @@ ModelImporter:
         weight: 1
       - path: CG/Pelvis/L Thigh/L Calf/L Foot
         weight: 1
+      - path: CG/Pelvis/L Thigh/L Calf/L Foot/Bip001 L Toe0
+        weight: 0
       - path: CG/Pelvis/R Thigh
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf
         weight: 1
       - path: CG/Pelvis/R Thigh/R Calf/R Foot
         weight: 1
+      - path: CG/Pelvis/R Thigh/R Calf/R Foot/R Toe0
+        weight: 0
       - path: CG/Pelvis/Spine
         weight: 1
       - path: CG/Pelvis/Spine/Spine1
@@ -590,7 +656,7 @@ ModelImporter:
       - path: CG/Pelvis/Spine/Spine1/R Clavicle/R UpperArm/R Forearm/R Hand/R Finger4/R
           Finger41/R Finger42
         weight: 1
-      - path: R
+      - path: CowBoy
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}

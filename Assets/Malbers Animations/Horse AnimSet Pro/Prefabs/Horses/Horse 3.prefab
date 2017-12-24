@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 8231502}
   - component: {fileID: 114475460629538594}
   - component: {fileID: 114234456883707232}
+  - component: {fileID: 114525839039327038}
   m_Layer: 20
   m_Name: Horse 3
   m_TagString: Player
@@ -376,9 +377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tracks: {fileID: 198000013136168986, guid: 70fe502b33f22f9458eee8b3c5b3925b, type: 2}
-  Dust: {fileID: 198065739537794398, guid: 4ce64c629464b8440acba241b0758298, type: 2}
+  Dust: {fileID: 198000010737321038, guid: f0e05868b149bf947969b4825ba90440, type: 2}
   StepsVolume: 0.2
-  DustParticles: 30
+  DustParticles: 16
   Scale: {x: 1, y: 1, z: 1}
   clips:
   - {fileID: 8300000, guid: 47e7b6f7e3e27e942b73e1d3efa55647, type: 3}
@@ -430,6 +431,7 @@ MonoBehaviour:
   RunASpeed: 1
   FlyASpeed: 1
   SwimASpeed: 1
+  DebugSync: 0
   ridersLink: {fileID: 4000011048899568}
   leftIK: {fileID: 453414}
   rightIK: {fileID: 455306}
@@ -437,7 +439,18 @@ MonoBehaviour:
   rightKnee: {fileID: 436842}
   OnMounted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTarget
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 464828}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   OnDismounted:
@@ -738,6 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000012825099872}
   - component: {fileID: 137000013737904118}
+  - component: {fileID: 95017489166329690}
   m_Layer: 20
   m_Name: Horse2
   m_TagString: Untagged
@@ -2337,7 +2351,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839343974017666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.311, z: 0.437}
+  m_LocalPosition: {x: 0, y: 1.494, z: 0.523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464828}
@@ -2482,6 +2496,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08996612, y: 0.08724604, z: 0.18718809}
   m_Center: {x: -0.08214168, y: -0.091400996, z: 0.10651219}
+--- !u!95 &95017489166329690
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010640012482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0afbcd6a030e8f64ea609948650b0f89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000010030351186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2717,7 +2748,7 @@ MonoBehaviour:
   movementS3: 4
   maxAngleSlope: 45
   SlowSlopes: 1
-  GotoSleep: 100
+  GotoSleep: 30
   SnapToGround: 20
   FallRayDistance: 0.18
   FallRayMultiplier: 1.2
@@ -2755,7 +2786,7 @@ MonoBehaviour:
   LockUp: 0
   life: 100
   defense: 0
-  damageDelay: 0.8
+  damageDelay: 2
   damageInterrupt: 2
   TotalAttacks: 3
   activeAttack: -1
@@ -2811,13 +2842,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   EditorGeneral: 1
-  EditorGround: 1
-  EditorWater: 1
+  EditorGround: 0
+  EditorWater: 0
   EditorAir: 1
-  EditorAdvanced: 1
-  EditorAirControl: 1
-  EditorAttributes: 1
-  EditorEvents: 1
+  EditorAdvanced: 0
+  EditorAirControl: 0
+  EditorAttributes: 0
+  EditorEvents: 0
 --- !u!114 &114094874369198562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2863,11 +2894,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114234456883707232
@@ -2909,11 +2940,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114369679951398516
@@ -2955,11 +2986,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114475460629538594
@@ -3036,6 +3067,19 @@ MonoBehaviour:
   MountAnimation: Mount Animal Right
   DismountID: 2
   Adjustment: {fileID: 0}
+--- !u!114 &114525839039327038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fcdc7f635dc6143a5ffbcc404315d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 95017489166329690}
+  parameter: Eyes
 --- !u!114 &114551397459067288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3047,11 +3091,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114557147787091324
@@ -3083,11 +3127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseColliders: 0
+  UseColliders: 1
   gizmoType: 0
-  alpha: 0.25
+  alpha: 0.026
   debugSize: 0.03
-  DebugColor: {r: 1, g: 1, b: 1, a: 1}
+  DebugColor: {r: 1, g: 1, b: 1, a: 0.459}
   DrawAxis: 0
   AxisSize: 0.2
 --- !u!114 &114839648990141330
@@ -17274,7 +17318,7 @@ LODGroup:
     - renderer: {fileID: 137000010024115310}
     - renderer: {fileID: 137000012730569846}
     - renderer: {fileID: 137000014260666242}
-  - screenRelativeHeight: 0.12078003
+  - screenRelativeHeight: 0.07001346
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 137000012142016668}

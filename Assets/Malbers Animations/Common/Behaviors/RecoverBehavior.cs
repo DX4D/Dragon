@@ -25,7 +25,7 @@ namespace MalbersAnimations
             if (Landing)
             {
                 animal.IsInAir = false;
-                if (stillContraints) rb.constraints = animal.Still_Constraints;
+                if (rb && stillContraints) rb.constraints = animal.Still_Constraints;
             }
         }
 
@@ -44,7 +44,7 @@ namespace MalbersAnimations
 
             if (stateInfo.normalizedTime < 0.9f)   //Smooth Stop when RecoverFalls
             {
-                rb.drag = Mathf.Lerp(rb.drag, MaxDrag, Time.deltaTime * smoothness);
+               if(rb) rb.drag = Mathf.Lerp(rb.drag, MaxDrag, Time.deltaTime * smoothness);
             }
             else
             {
@@ -57,7 +57,7 @@ namespace MalbersAnimations
             if (animator.applyRootMotion != true)
                 animator.applyRootMotion = true;
 
-            rb.drag = 0; //Reset the Drag
+            if (rb) rb.drag = 0; //Reset the Drag
         }
     }
 }

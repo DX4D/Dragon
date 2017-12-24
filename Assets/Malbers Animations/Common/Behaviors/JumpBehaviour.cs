@@ -40,7 +40,7 @@ namespace MalbersAnimations
 
             animal.OnJump.Invoke();     //Invoke that the Animal is Jumping
 
-            Rb_Y_Speed = 0;                 //For Flying
+            Rb_Y_Speed = 0;             //For Flying
 
             smooth =  0;
         }
@@ -58,7 +58,8 @@ namespace MalbersAnimations
                     Debug.DrawRay(animal.Pivot_fall, -animal.transform.up * animal.Chest_Pivot_Multiplier * fallRay, Color.red);
                 }
 
-                if ((jumpPoint - JumpRay.point.y) <= treshold * animal.ScaleFactor && (Vector3.Angle(JumpRay.normal, Vector3.up) < animal.maxAngleSlope) )   //If if finding a lower jump point;
+                if ((jumpPoint - JumpRay.point.y) <= treshold * animal.ScaleFactor 
+                    && (Vector3.Angle(JumpRay.normal, Vector3.up) < animal.maxAngleSlope) )   //If if finding a lower jump point;
                 {
                     animal.SetIntID(0);                                               //Keep the INTID in 0
                 }

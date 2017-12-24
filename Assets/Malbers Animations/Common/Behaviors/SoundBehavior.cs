@@ -47,7 +47,7 @@ namespace MalbersAnimations
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            if (_audio) _audio.Stop();
+            //if (_audio) _audio.Stop();
         }
 
         public virtual void PlaySound()

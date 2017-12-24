@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Horse Ride
   PivotPos: {x: 0, y: 0, z: 0}
-  CamPos: {x: 0.45, y: 0.5, z: -4.21}
+  CamPos: {x: 0.45, y: -0.15, z: -4.21}
   CamFOV: 45

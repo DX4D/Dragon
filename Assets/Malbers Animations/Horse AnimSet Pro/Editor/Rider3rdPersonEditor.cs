@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEditor.Animations;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MalbersAnimations.HAP
 {
@@ -27,17 +29,18 @@ namespace MalbersAnimations.HAP
 
             Animator anim = MyRider.GetComponent<Animator>();
 
+            AnimatorController controller = (AnimatorController) anim.runtimeAnimatorController;
 
-            if (anim && (anim.runtimeAnimatorController != null) && anim.gameObject.activeSelf)
+            if (controller)
             {
-                if (!PrefabUtility.GetPrefabObject(anim) || PrefabUtility.GetPrefabParent(anim))
+                List<AnimatorControllerLayer> layers = controller.layers.ToList();
+
+                if (layers.Find(layer => layer.name == "Mounted") == null)
+                //if (anim.GetLayerIndex("Mounted") == -1)
                 {
-                    if (anim.GetLayerIndex("Mounted") == -1)
+                    if (GUILayout.Button(new GUIContent("Add Mounted Layer", "Used this to add the Parameters and 'Mounted' Layer from the Mounted Animator to your custom TCP animator ")))
                     {
-                        if (GUILayout.Button(new GUIContent("Add Mounted Layer", "Used this to add the Parameters and 'Mounted' Layer from the Mounted Animator to your custom TCP animator ")))
-                        {
-                            AddLayerMounted();
-                        }
+                        AddLayerMounted(controller);
                     }
                 }
             }
@@ -65,23 +68,14 @@ namespace MalbersAnimations.HAP
         }
 
 
-        void AddLayerMounted()
+        void AddLayerMounted(AnimatorController AnimController)
         {
             AnimatorController MountedLayerFile = Resources.Load<AnimatorController>("Mounted Layer");
             AnimatorControllerLayer MountedLayer = MountedLayerFile.layers[1];
 
-
-            Animator anim = MyRider.GetComponent<Animator>();
-            AnimatorController AnimController = (AnimatorController)anim.runtimeAnimatorController;
-
             UpdateParametersOnAnimator(AnimController);
 
-            int MountedLayer_Index = anim.GetLayerIndex("Mounted");
-
-            if (MountedLayer_Index == -1)
-            {
-                AnimController.AddLayer(MountedLayer);
-            }
+            AnimController.AddLayer(MountedLayer);
         }
 
 

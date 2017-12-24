@@ -3,7 +3,7 @@
 namespace MalbersAnimations
 {
     [RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(Rigidbody))]
+    //[RequireComponent(typeof(Rigidbody))]
     /// <summary>
     /// This will controll all Animals Motion  
     /// Version 2.0

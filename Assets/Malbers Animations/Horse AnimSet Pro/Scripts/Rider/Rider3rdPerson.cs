@@ -21,6 +21,8 @@ namespace MalbersAnimations.HAP
 
         public int MountLayerIndex = -1;               //Mount Layer Hash
 
+        protected AnimatorUpdateMode Initial_UpdateMode;
+
         public override Mountable Montura
         {
             get { return montura; }
@@ -36,16 +38,20 @@ namespace MalbersAnimations.HAP
         void Awake()
         {
             _transform = transform;
-            if (!Anim) Anim = GetComponent<Animator>();
+            if (!Anim) Anim = GetComponentInChildren<Animator>();
             _rigidbody = GetComponent<Rigidbody>();
             _collider = GetComponents<Collider>();
 
             MountLayerIndex = -1;                       //Resets the Mounting Layer;
+
+        
+
         }
 
         void Start()
         {
             IsOnHorse = Mounted = false;                                    //initialize in false
+            if (Anim) Initial_UpdateMode = Anim.updateMode;           //Gets the Update Mode of the Animator to restore later when dismounted.
 
             if (StartMounted) AlreadyMounted();                             //Set All if Started Mounted is Active
         }
@@ -92,9 +98,11 @@ namespace MalbersAnimations.HAP
         /// </summary>
         public override void Start_Mounting()
         {
-            if (Anim) Anim.SetLayerWeight(MountLayerIndex, 1);                             //Enable Mount Layer set the weight to 1
-
-            if (Anim) Anim.SetBool(Hash.Mount, Mounted);                                 //Update the Mount Parameter on the Animator
+            if (Anim)
+            {
+                Anim.SetLayerWeight(MountLayerIndex, 1);                                //Enable Mount Layer set the weight to 1
+                Anim.SetBool(Hash.Mount, Mounted);                                      //Update the Mount Parameter on the Animator
+            }
 
             if (!MountTrigger)
                 MountTrigger = Montura.transform.GetComponentInChildren<MountTriggers>();    //If null add the first mount trigger found
@@ -105,23 +113,28 @@ namespace MalbersAnimations.HAP
             }
 
             base.Start_Mounting();
-            OnStartMounting.Invoke();                                                  //Invoke UnityEvent for  Start Mounting
+            OnStartMounting.Invoke();                                                   //Invoke UnityEvent for  Start Mounting
 
-            if (!Anim) End_Dismounting();
+            if (!Anim) End_Dismounting();                                               //If is there no Animator  execute the End_Dismounting part
         }
 
 
         public override void End_Mounting()
         {
             base.End_Mounting();
+
+            if (Anim) Anim.updateMode = AnimatorUpdateMode.Normal;                      //Needed to make IK Stuffs Manually like Bow, Pistol etc...
+
             OnEndMounting.Invoke();
         }
 
         public override void Start_Dismounting()
         {
             base.Start_Dismounting();
-            OnStartDismounting.Invoke();
 
+            if (Anim) Anim.updateMode = Initial_UpdateMode;                      //Restore Update mode to its original
+
+            OnStartDismounting.Invoke();
         }
         ///──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
         /// <summary>

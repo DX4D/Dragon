@@ -902,7 +902,7 @@ ModelImporter:
             outSlope: 0
             tangentMode: 0
           - serializedVersion: 2
-            time: 0.11880345
+            time: 0.19953261
             value: 1
             inSlope: 0
             outSlope: 0
@@ -915,7 +915,7 @@ ModelImporter:
             tangentMode: 0
           preInfinity: 2
           postInfinity: 2
-          rotationOrder: 4
+          rotationOrder: 0
       - name: IKRightFoot
         curve:
           serializedVersion: 2

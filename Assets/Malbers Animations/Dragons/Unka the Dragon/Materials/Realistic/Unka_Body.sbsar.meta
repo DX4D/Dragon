@@ -1,8 +1,9 @@
 fileFormatVersion: 2
 guid: d5e9188e326ddfa4dbe1482140ed2d39
-timeCreated: 1511640799
-licenseType: Store
+timeCreated: 1514150288
+licenseType: Free
 SubstanceImporter:
+  externalObjects: {}
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
@@ -21,6 +22,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodySaturation
       value:
         scalar[0]: 0.485
@@ -28,6 +30,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Hue
       value:
         scalar[0]: 0.475
@@ -35,6 +38,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Saturation
       value:
         scalar[0]: 0.069
@@ -42,6 +46,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Lightness
       value:
         scalar[0]: 0.374
@@ -49,6 +54,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyLightness
       value:
         scalar[0]: 0.007
@@ -56,6 +62,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestHue
       value:
         scalar[0]: 0.009
@@ -63,6 +70,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestLightness
       value:
         scalar[0]: 0.359
@@ -70,6 +78,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueHue
       value:
         scalar[0]: 0
@@ -77,6 +86,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsHue
       value:
         scalar[0]: 0
@@ -84,6 +94,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsHue
       value:
         scalar[0]: 0
@@ -91,6 +102,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionLightness
       value:
         scalar[0]: 0.587
@@ -98,6 +110,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionHue
       value:
         scalar[0]: 0
@@ -105,6 +118,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterPower
       value:
         scalar[0]: 0
@@ -112,6 +126,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterColor
       value:
         scalar[0]: 0.43382353
@@ -119,6 +134,7 @@ SubstanceImporter:
         scalar[2]: 0.06881337
         scalar[3]: 1
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $outputsize
       value:
         scalar[0]: 8
@@ -126,6 +142,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $pixelsize
       value:
         scalar[0]: 1
@@ -133,6 +150,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $randomseed
       value:
         scalar[0]: 2102
@@ -140,6 +158,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestSaturation
       value:
         scalar[0]: 0.5
@@ -147,6 +166,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthHue
       value:
         scalar[0]: 0
@@ -154,6 +174,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthSaturation
       value:
         scalar[0]: 0.5
@@ -161,6 +182,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthLightness
       value:
         scalar[0]: 0.5
@@ -168,6 +190,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueSaturation
       value:
         scalar[0]: 0.5
@@ -175,6 +198,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueLightness
       value:
         scalar[0]: 0.5
@@ -182,6 +206,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsSaturation
       value:
         scalar[0]: 0.409
@@ -189,6 +214,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsLightness
       value:
         scalar[0]: 0.382
@@ -196,6 +222,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsSaturation
       value:
         scalar[0]: 0.5
@@ -203,6 +230,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsLightness
       value:
         scalar[0]: 0.5
@@ -210,6 +238,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethHue
       value:
         scalar[0]: 0.25
@@ -217,6 +246,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethSaturation
       value:
         scalar[0]: 0.25
@@ -224,6 +254,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethLightness
       value:
         scalar[0]: 0.41
@@ -231,6 +262,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionSaturation
       value:
         scalar[0]: 0.46
@@ -238,6 +270,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -331,12 +364,12 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     textureAssignments:
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 242757422
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 242757420
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 242757422
     - shaderProp: _EmissionMap
       material: {instanceID: 0}
       baseUID: 179787355
@@ -366,6 +399,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $pixelsize
       value:
         scalar[0]: 1
@@ -373,6 +407,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $randomseed
       value:
         scalar[0]: 0
@@ -380,6 +415,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyHue
       value:
         scalar[0]: 0.5
@@ -387,6 +423,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodySaturation
       value:
         scalar[0]: 0.5
@@ -394,6 +431,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyLightness
       value:
         scalar[0]: 0.5
@@ -401,6 +439,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Hue
       value:
         scalar[0]: 0
@@ -408,6 +447,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Saturation
       value:
         scalar[0]: 0.5
@@ -415,6 +455,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Lightness
       value:
         scalar[0]: 0.5
@@ -422,6 +463,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestHue
       value:
         scalar[0]: 0
@@ -429,6 +471,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestSaturation
       value:
         scalar[0]: 0.5
@@ -436,6 +479,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestLightness
       value:
         scalar[0]: 0.49
@@ -443,6 +487,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthHue
       value:
         scalar[0]: 0
@@ -450,6 +495,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthSaturation
       value:
         scalar[0]: 0.5
@@ -457,6 +503,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthLightness
       value:
         scalar[0]: 0.5
@@ -464,6 +511,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueHue
       value:
         scalar[0]: 0
@@ -471,6 +519,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueSaturation
       value:
         scalar[0]: 0.5
@@ -478,6 +527,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueLightness
       value:
         scalar[0]: 0.5
@@ -485,6 +535,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsHue
       value:
         scalar[0]: 0
@@ -492,6 +543,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsSaturation
       value:
         scalar[0]: 0.5
@@ -499,6 +551,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsLightness
       value:
         scalar[0]: 0.5
@@ -506,6 +559,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsHue
       value:
         scalar[0]: 0
@@ -513,6 +567,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsSaturation
       value:
         scalar[0]: 0.5
@@ -520,6 +575,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsLightness
       value:
         scalar[0]: 0.5
@@ -527,6 +583,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethHue
       value:
         scalar[0]: 0.25
@@ -534,6 +591,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethSaturation
       value:
         scalar[0]: 0.25
@@ -541,6 +599,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethLightness
       value:
         scalar[0]: 0.41
@@ -548,6 +607,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionHue
       value:
         scalar[0]: 0
@@ -555,6 +615,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionSaturation
       value:
         scalar[0]: 0.5
@@ -562,6 +623,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionLightness
       value:
         scalar[0]: 0.5
@@ -569,6 +631,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterColor
       value:
         scalar[0]: 0.46323532
@@ -576,6 +639,7 @@ SubstanceImporter:
         scalar[2]: 0.26908523
         scalar[3]: 1
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterPower
       value:
         scalar[0]: 0.172
@@ -583,6 +647,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -676,12 +741,12 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     textureAssignments:
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 242757422
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 242757420
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 242757422
     - shaderProp: _EmissionMap
       material: {instanceID: 0}
       baseUID: 179787355
@@ -711,6 +776,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $pixelsize
       value:
         scalar[0]: 1
@@ -718,6 +784,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $randomseed
       value:
         scalar[0]: 0
@@ -725,6 +792,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyHue
       value:
         scalar[0]: 0.633
@@ -732,6 +800,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodySaturation
       value:
         scalar[0]: 0.477
@@ -739,6 +808,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyLightness
       value:
         scalar[0]: 0.425
@@ -746,6 +816,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Hue
       value:
         scalar[0]: 0.154
@@ -753,6 +824,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Saturation
       value:
         scalar[0]: 0.478
@@ -760,6 +832,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Lightness
       value:
         scalar[0]: 0.441
@@ -767,6 +840,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestHue
       value:
         scalar[0]: 0.227
@@ -774,6 +848,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestSaturation
       value:
         scalar[0]: 0.456
@@ -781,6 +856,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestLightness
       value:
         scalar[0]: 0.407
@@ -788,6 +864,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthHue
       value:
         scalar[0]: 0
@@ -795,6 +872,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthSaturation
       value:
         scalar[0]: 0.648
@@ -802,6 +880,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthLightness
       value:
         scalar[0]: 0.422
@@ -809,6 +888,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueHue
       value:
         scalar[0]: 0
@@ -816,6 +896,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueSaturation
       value:
         scalar[0]: 0.5
@@ -823,6 +904,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueLightness
       value:
         scalar[0]: 0.5
@@ -830,6 +912,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsHue
       value:
         scalar[0]: 0.171
@@ -837,6 +920,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsSaturation
       value:
         scalar[0]: 0.338
@@ -844,6 +928,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsLightness
       value:
         scalar[0]: 0.318
@@ -851,6 +936,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsHue
       value:
         scalar[0]: 0.217
@@ -858,6 +944,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsSaturation
       value:
         scalar[0]: 0.437
@@ -865,6 +952,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsLightness
       value:
         scalar[0]: 0.374
@@ -872,6 +960,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethHue
       value:
         scalar[0]: 0.25
@@ -879,6 +968,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethSaturation
       value:
         scalar[0]: 0.25
@@ -886,6 +976,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethLightness
       value:
         scalar[0]: 0.41
@@ -893,6 +984,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionHue
       value:
         scalar[0]: 0.059
@@ -900,6 +992,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionSaturation
       value:
         scalar[0]: 0.613
@@ -907,6 +1000,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionLightness
       value:
         scalar[0]: 0.5
@@ -914,6 +1008,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterColor
       value:
         scalar[0]: 0.9632353
@@ -921,6 +1016,7 @@ SubstanceImporter:
         scalar[2]: 0.5595264
         scalar[3]: 1
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterPower
       value:
         scalar[0]: 0.91
@@ -928,6 +1024,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -1021,12 +1118,12 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     textureAssignments:
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 242757422
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 242757420
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 242757422
     - shaderProp: _EmissionMap
       material: {instanceID: 0}
       baseUID: 179787355
@@ -1056,6 +1153,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $pixelsize
       value:
         scalar[0]: 1
@@ -1063,6 +1161,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: $randomseed
       value:
         scalar[0]: 0
@@ -1070,6 +1169,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyHue
       value:
         scalar[0]: 0.488
@@ -1077,6 +1177,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodySaturation
       value:
         scalar[0]: 0.681
@@ -1084,6 +1185,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: BodyLightness
       value:
         scalar[0]: 0.469
@@ -1091,6 +1193,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Hue
       value:
         scalar[0]: 0.5
@@ -1098,6 +1201,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Saturation
       value:
         scalar[0]: 0.784
@@ -1105,6 +1209,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: Lightness
       value:
         scalar[0]: 0.344
@@ -1112,6 +1217,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestHue
       value:
         scalar[0]: 0.494
@@ -1119,6 +1225,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestSaturation
       value:
         scalar[0]: 0.632
@@ -1126,6 +1233,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ChestLightness
       value:
         scalar[0]: 0.447
@@ -1133,6 +1241,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthHue
       value:
         scalar[0]: 0
@@ -1140,6 +1249,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthSaturation
       value:
         scalar[0]: 0.54
@@ -1147,6 +1257,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: MouthLightness
       value:
         scalar[0]: 0.443
@@ -1154,6 +1265,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueHue
       value:
         scalar[0]: 0
@@ -1161,6 +1273,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueSaturation
       value:
         scalar[0]: 0.455
@@ -1168,6 +1281,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TongueLightness
       value:
         scalar[0]: 0.454
@@ -1175,6 +1289,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsHue
       value:
         scalar[0]: 0
@@ -1182,6 +1297,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsSaturation
       value:
         scalar[0]: 0.572
@@ -1189,6 +1305,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ThornsLightness
       value:
         scalar[0]: 0.5
@@ -1196,6 +1313,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsHue
       value:
         scalar[0]: 0.232
@@ -1203,6 +1321,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsSaturation
       value:
         scalar[0]: 0
@@ -1210,6 +1329,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: HornsLightness
       value:
         scalar[0]: 0
@@ -1217,6 +1337,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethHue
       value:
         scalar[0]: 0
@@ -1224,6 +1345,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethSaturation
       value:
         scalar[0]: 0.54
@@ -1231,6 +1353,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: TeethLightness
       value:
         scalar[0]: 0.372
@@ -1238,6 +1361,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionHue
       value:
         scalar[0]: 0
@@ -1245,6 +1369,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionSaturation
       value:
         scalar[0]: 0.5
@@ -1252,6 +1377,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: EmissionLightness
       value:
         scalar[0]: 0.309
@@ -1259,6 +1385,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterColor
       value:
         scalar[0]: 1
@@ -1266,6 +1393,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 1
         texture: {instanceID: 0}
+        stringvalue: 
     - name: ScatterPower
       value:
         scalar[0]: 0.585
@@ -1273,6 +1401,7 @@ SubstanceImporter:
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
+        stringvalue: 
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
@@ -1366,12 +1495,12 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     textureAssignments:
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 242757422
     - shaderProp: _MainTex
       material: {instanceID: 0}
       baseUID: 242757420
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 242757422
     - shaderProp: _EmissionMap
       material: {instanceID: 0}
       baseUID: 179787355

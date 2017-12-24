@@ -41,6 +41,8 @@ namespace MalbersAnimations.Utilities
         public bool debug = true;
         bool hasTarget;
 
+        private RaycastHit aimHit;
+
         public Vector3 Direction
         {
             set { direction = value; }
@@ -53,6 +55,15 @@ namespace MalbersAnimations.Utilities
         public bool IsAiming
         {
             get { return angle < LimitAngle && active && hasTarget; }
+        }
+
+        /// <summary>
+        /// Last Raycast stored for calculating the Aim
+        /// </summary>
+        public RaycastHit AimHit
+        {
+            get { return aimHit; }
+            set { aimHit = value; }
         }
 
         bool AnimatorOnAnimatePhysics;
@@ -145,11 +156,11 @@ namespace MalbersAnimations.Utilities
                 {
                     dir = cam.forward;
 
-                    RaycastHit h = MalbersTools.RayCastHitToCenter(bone.bone);
+                    aimHit = MalbersTools.RayCastHitToCenter(bone.bone);
 
-                    if (h.collider)
+                    if (aimHit.collider)
                     {
-                        dir = MalbersTools.DirectionTarget(bone.bone.position, h.point);
+                        dir = MalbersTools.DirectionTarget(bone.bone.position, aimHit.point);
                     }
                 }
 
@@ -189,8 +200,18 @@ namespace MalbersAnimations.Utilities
 
                 Vector3 dir = transform.forward;
 
+                if (UseCamera)
+                {
+                    dir = cam.forward;
+
+                    aimHit = MalbersTools.RayCastHitToCenter(bone.bone);
+
+                    if (aimHit.collider)
+                    {
+                        dir = MalbersTools.DirectionTarget(bone.bone.position, aimHit.point);
+                    }
+                }
                 if (Target) dir = (Target.position - bone.bone.position).normalized;
-                if (UseCamera) dir = cam.forward;
 
                 direction = Vector3.Lerp(direction, dir, Time.deltaTime * Smoothness);
 

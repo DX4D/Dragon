@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using UnityEditorInternal;
-using System.Collections;
 using UnityEditor.Animations;
 using System.Collections.Generic;
-using System;
+using System.Linq;
 
 namespace MalbersAnimations.HAP
 {
@@ -310,23 +308,25 @@ namespace MalbersAnimations.HAP
 
             Animator anim = MyRiderCombat.GetComponent<Animator>();
 
-            if (anim && (anim.runtimeAnimatorController != null) && anim.gameObject.activeSelf)
+            AnimatorController controller = (AnimatorController) anim.runtimeAnimatorController;
+
+            if (controller)
             {
-                if (!PrefabUtility.GetPrefabObject(anim) || PrefabUtility.GetPrefabParent(anim))
+                List<AnimatorControllerLayer> layers = controller.layers.ToList();
+
+                if (layers.Find(layer => layer.name == "Mounted") == null)
+                //if (anim.GetLayerIndex("Mounted") == -1)
                 {
-                   
-                    if (anim.GetLayerIndex("Mounted") == -1)
+                    EditorGUILayout.HelpBox("No Mounted Layer Found, Add it the Mounted Layer using the Rider 3rd Person Script", MessageType.Warning);
+                }
+                else
+                {
+                    if (layers.Find(layer => layer.name == "Rider Combat") == null)
+                    //if (anim.GetLayerIndex("Rider Combat") == -1)
                     {
-                        EditorGUILayout.HelpBox("No Mounted Layer Found, Add it the Mounted Layer using the Rider 3rd Person Script", MessageType.Warning);
-                    }
-                    else
-                    {
-                        if (anim.GetLayerIndex("Rider Combat") == -1)
+                        if (GUILayout.Button(new GUIContent("Add Rider Combat Layers", "Used for adding the parameters and Layer from the Mounted Animator to your custom character controller animator ")))
                         {
-                            if (GUILayout.Button(new GUIContent("Add Rider Combat Layers", "Used for adding the parameters and Layer from the Mounted Animator to your custom character controller animator ")))
-                            {
-                                AddLayerMounted();
-                            }
+                            AddLayerMountedCombat(controller);
                         }
                     }
                 }
@@ -370,32 +370,22 @@ namespace MalbersAnimations.HAP
             EditorGUILayout.EndVertical();
         }
 
-        void AddLayerMounted()
+        void AddLayerMountedCombat(AnimatorController CurrentAnimator)
         {
-            UnityEditor.Animations.AnimatorController MountedLayerFile = Resources.Load<UnityEditor.Animations.AnimatorController>("Mounted Layer");
-
-            Animator anim = MyRiderCombat.GetComponent<Animator>();                                         //Get the Animator
-            UnityEditor.Animations.AnimatorController CurrentAnimator = (UnityEditor.Animations.AnimatorController)anim.runtimeAnimatorController;        //Get the current RuntimeAnimatorController
+            AnimatorController MountedLayerFile = Resources.Load<AnimatorController>("Mounted Layer");
 
             Rider3rdPersonEditor.UpdateParametersOnAnimator(CurrentAnimator);
             UpdateParametersOnAnimator(CurrentAnimator);                                                    //Adding the Parameters Needed
 
-            UnityEditor.Animations.AnimatorControllerLayer RiderCombatLayers = MountedLayerFile.layers[2];                         //Search For the 2nd Layer to Add
-            int RiderCombatLayer_Index;
-
-            RiderCombatLayer_Index = anim.GetLayerIndex("Rider Arm Right");
-            if (RiderCombatLayer_Index == -1) CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Arm Right" Layer
+            AnimatorControllerLayer RiderCombatLayers = MountedLayerFile.layers[2];                         //Search For the 2nd Layer to Add
+            CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Arm Right" Layer
 
             RiderCombatLayers = MountedLayerFile.layers[3];
-
-            RiderCombatLayer_Index = anim.GetLayerIndex("Rider Arm Left");
-            if (RiderCombatLayer_Index == -1) CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Arm Left"  Layer
+            CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Arm Left"  Layer
 
 
             RiderCombatLayers = MountedLayerFile.layers[4];
-
-            RiderCombatLayer_Index = anim.GetLayerIndex("Rider Combat");
-            if (RiderCombatLayer_Index == -1) CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Combat" Layer
+            CurrentAnimator.AddLayer(RiderCombatLayers);                  //Add "Rider Combat" Layer
 
         }
 

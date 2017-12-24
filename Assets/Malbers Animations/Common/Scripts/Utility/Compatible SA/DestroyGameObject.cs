@@ -1,9 +1,11 @@
-using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility
+namespace MalbersAnimations
 {
-    public class TimedObjectDestructor : MonoBehaviour
+    /// <summary>
+    /// This is the same TimedObjectDestructor of the Stardard Assets
+    /// </summary>
+    public class DestroyGameObject : MonoBehaviour
     {
         [SerializeField] private float m_TimeOut = 1.0f;
         [SerializeField] private bool m_DetachChildren = false;

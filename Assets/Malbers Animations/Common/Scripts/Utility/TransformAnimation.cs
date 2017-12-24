@@ -12,8 +12,8 @@ namespace MalbersAnimations
 
         static Keyframe[] K = {new Keyframe(0,0), new Keyframe(1,1) };
 
-        public float time = 0.5f;
-        public float delay = 0.0001f;
+        public float time = 1f;
+        public float delay = 1f;
         //public AnimCycle cycle;
 
         public bool UsePosition = true;

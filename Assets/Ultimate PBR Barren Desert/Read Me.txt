@@ -1,0 +1,23 @@
+Hello there!
+
+First off, I would just like to thank you for purchasing this asset.
+It means a lot to know people see the value in this asset for them to purchase it with their hard earned money.
+So truly, thank you so much! Your purchase is what really helps keep me going in my passion to create awesome, fun assets.
+I hope you find your purchase worth it, and that you can make some really cool stuff with it.
+If you like the asset, see if you can take the time to leave a review. 
+Also if you don't like it, you can also leave a negative one, I don't mind :)
+Feedback is necessary for me to keep improving the quality of assets I make.
+Also feel free to show me what you make with the asset, I love to see community creations :)
+You can just send me an email at matthew121250@hotmail.com if you have any questions, concerns, or anything cool to share.
+Anyways, thanks again for your purchase - I truly appreciate it.
+
+NOTE: Due to possible compatibility issues with unity versions, I was not allowed to include the image effects in this package.
+Due to this, what you see in unity may not look exactly like you saw in the screenshots. 
+However, this can be easily fixed by importing the proper image effects, and adding them to the camera yourselves.
+If you are on Unity 5.5.0 or above, I suggest downloading and working with the new post processing stack, found here: https://github.com/Unity-Technologies/PostProcessing/wiki.
+If you on a version before Unity 5.5.0, then I would suggest the following. Go into your project, Assets tab at the top, Import Package > Effects. 
+Doing this will get you the image effects required to replicate the exact screenshots, or if you are using Unity 5.5.0, potentially better looking effects than the screenshots.
+If you need any assistance with the image effects, then feel free to email me, I would be happy to help you out.
+
+Matthew
+400m Creations

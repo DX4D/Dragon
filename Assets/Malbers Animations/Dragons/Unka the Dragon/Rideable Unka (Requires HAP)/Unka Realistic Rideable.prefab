@@ -4861,6 +4861,7 @@ MonoBehaviour:
   RunASpeed: 0.67
   FlyASpeed: 0.3
   SwimASpeed: 0.5
+  DebugSync: 0
   ridersLink: {fileID: 4867035067344640}
   leftIK: {fileID: 4926790404660908}
   rightIK: {fileID: 4751135946489518}

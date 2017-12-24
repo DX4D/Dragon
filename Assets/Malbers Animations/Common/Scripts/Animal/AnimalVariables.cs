@@ -565,12 +565,12 @@ namespace MalbersAnimations
 
                     if (fly)                                    //OnFly Enabled!
                     {
-                        _RigidBody.useGravity = false;          //Deactivate gravity in case use gravity is off
+                        if (_RigidBody) _RigidBody.useGravity = false;          //Deactivate gravity in case use gravity is off
                         LastGroundSpeed = groundSpeed;
                         groundSpeed = 1;                        //Change velocity to 1
                         IsInAir = true;
 
-                        Quaternion finalRot = Quaternion.FromToRotation(_transform.up, UpVector) * _RigidBody.rotation; 
+                        Quaternion finalRot = Quaternion.FromToRotation(_transform.up, UpVector) * transform.rotation;
                         StartCoroutine(MalbersTools.AlignTransformsC(transform, finalRot, 0.3f));    //Quick Align the Fly
                     }
                     else
@@ -615,16 +615,17 @@ namespace MalbersAnimations
 
             set
             {
-                if (!value)  attack1 = value;
+                if (!value && attack1)  attack1 = value;
               
                 if (death) return;
+
+                if (!RealAnimatorState(Hash.Tag_Attack) && isAttacking) isAttacking = false;     //Don't Attack when is making an action
 
                 if (!isAttacking)
                 {
                     if (value)                                                              //If Attack was set to true
                     {
                         if (RealAnimatorState(Hash.Action)) return;     //Don't Attack when is making an action
-
 
                         attack1 = value;
                         IDInt = activeAttack;                           //Change the IntID to the Active attack ID

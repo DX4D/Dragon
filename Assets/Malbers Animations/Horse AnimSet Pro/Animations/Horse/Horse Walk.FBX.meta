@@ -46,6 +46,8 @@ ModelImporter:
     100076: StridesC
     100078: StridesL
     100080: StridesR
+    100082: CowBoy
+    100084: Horse
     400000: H
     400002: Hidden01
     400004: Hidden02
@@ -87,12 +89,20 @@ ModelImporter:
     400076: StridesC
     400078: StridesL
     400080: StridesR
+    400082: CowBoy
+    400084: Horse
+    2300000: CowBoy
+    3300000: CowBoy
     4300000: H
-    7400000: Walk
-    7400002: WalkL
-    7400004: WalkR
+    4300002: Horse
+    4300004: CowBoy
+    7400000: Horse Walk
+    7400002: Horse Walk Left
+    7400004: Horse Walk Right
+    7400006: Take 001
     9500000: //RootNode
     13700000: H
+    13700002: Horse
   materials:
     importMaterials: 0
     materialName: 0
@@ -103,6 +113,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -115,14 +127,14 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walk
+      name: Horse Walk
       takeName: Take 001
       firstFrame: 0
       lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 0
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -141,7 +153,9 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: H
+      - path: CowBoy
+        weight: 1
+      - path: Horse
         weight: 1
       - path: Horsi_CG
         weight: 1
@@ -224,14 +238,6 @@ ModelImporter:
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
           Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand/Hidden03
         weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesL
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesR
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/StridesC
-        weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
         weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent/RiderLink
@@ -250,14 +256,14 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: WalkL
+      name: Horse Walk Left
       takeName: Take 001
-      firstFrame: 40
-      lastFrame: 72
+      firstFrame: 35
+      lastFrame: 67
       wrapMode: 0
       orientationOffsetY: -22
       level: 0
-      cycleOffset: 0
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -276,7 +282,9 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: H
+      - path: CowBoy
+        weight: 1
+      - path: Horse
         weight: 1
       - path: Horsi_CG
         weight: 1
@@ -358,14 +366,6 @@ ModelImporter:
         weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
           Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand/Hidden03
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesL
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesR
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/StridesC
         weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
         weight: 1
@@ -385,14 +385,14 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: WalkR
+      name: Horse Walk Right
       takeName: Take 001
-      firstFrame: 80
-      lastFrame: 112
+      firstFrame: 70
+      lastFrame: 102
       wrapMode: 0
       orientationOffsetY: 22
       level: 0.04
-      cycleOffset: 0.5
+      cycleOffset: 0.2
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -411,7 +411,9 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: H
+      - path: CowBoy
+        weight: 1
+      - path: Horse
         weight: 1
       - path: Horsi_CG
         weight: 1
@@ -493,14 +495,6 @@ ModelImporter:
         weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
           Neck/Horsi_ R Clavicle/Horsi_ R UpperArm/Horsi_ R Forearm/Horsi_ R Hand/Hidden03
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesL
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/Horsi_
-          Neck/StridesR
-        weight: 1
-      - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/Horsi_ Spine2/StridesC
         weight: 1
       - path: Horsi_CG/Horsi_ Pelvis/Horsi_ Spine/Horsi_ Spine1/RiderParent
         weight: 1
@@ -544,6 +538,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 1
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -554,7 +549,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: Horsi_CG
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 267508c9d6a3c0445ac3c217bd110db3,
     type: 3}
   animationType: 2

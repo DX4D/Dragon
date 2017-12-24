@@ -26,7 +26,7 @@ namespace MalbersAnimations.Utilities
 
             if (hasLookAt && hasLookAt.active && hasLookAt.IsAiming)
             {
-                rb.AddForce(effect.root.forward * velocity);
+                rb.AddForce(hasLookAt.Direction.normalized * velocity);
             }
             else
             {

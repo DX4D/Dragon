@@ -23,10 +23,13 @@ namespace MalbersAnimations
         public UpdateType updateType = UpdateType.FixedUpdate;      // stores the selected update type
 
 
+        Vector3 CurrentVelocity;
+
         private Transform cam;                                      // the transform of the camera
         private Transform pivot;                                    // the point at which the camera pivots around
 
         public float m_MoveSpeed = 10f;                             // How fast the rig will move to keep up with the target's position.
+        //public float smoothTime = 0.5f;                             // How fast the rig will move to keep up with the target's position.
         [Range(0f, 10f)]
         public float m_TurnSpeed = 10f;                             // How fast the rig will rotate from user input.
         public float m_TurnSmoothing = 10f;                         // How much smoothing to apply to the turn input, to reduce mouse-turn jerkiness
@@ -89,7 +92,9 @@ namespace MalbersAnimations
         protected void FollowTarget(float deltaTime)
         {
             if (m_Target == null) return;
+
             transform.position = Vector3.Lerp(transform.position, m_Target.position, deltaTime * m_MoveSpeed);  // Move the rig towards target position.
+            //transform.position = Vector3.SmoothDamp(transform.position, m_Target.position,ref CurrentVelocity, smoothTime);  // Move the rig towards target position.
         }
 
         private void HandleRotationMovement()

@@ -42,7 +42,7 @@ namespace MalbersAnimations
         }
 
         /// Find the direction hit vector and send it to the Damage Behavior without DamageValues
-        public virtual void GetDamaged(Vector3 Mycenter, Vector3 Theircenter, float Amount = 0)
+        public virtual void getDamaged(Vector3 Mycenter, Vector3 Theircenter, float Amount = 0)
         {
             DamageValues DV = new DamageValues(Mycenter - Theircenter, Amount);
             getDamaged(DV);
@@ -79,7 +79,6 @@ namespace MalbersAnimations
                     trigger.gameObject.SetActive(true);
                 }
                 return;
-
             }
 
             if (triggerIndex == 0)                          //Disable all Attack Triggers
@@ -127,9 +126,9 @@ namespace MalbersAnimations
         /// <summary>
         /// Activate an Attack by his Animation State IntID Transition
         /// </summary>
-        public virtual void SetAttack(int ID)
+        public virtual void SetAttack(int attackID)
         {
-            activeAttack = ID;
+            activeAttack = attackID;
             Attack1 = true;
         }
 
@@ -152,9 +151,11 @@ namespace MalbersAnimations
 
         IEnumerator ToogleAttack2()
         {
-            Attack2 = true;
-            yield return null;
-            yield return null;
+            for (int i = 0; i < 3; i++)
+            {
+                Attack2 = true;
+                yield return null;
+            }
             Attack2 = false;
         }
 
@@ -194,12 +195,13 @@ namespace MalbersAnimations
         public void SetIntID(int value)
         {
             IDInt = value;
-            Anim.SetInteger(Hash.IDInt, idInt);
+            Anim.SetInteger(Hash.IDInt, IDInt);         //Update the Animator
         }
 
         public void SetFloatID(float value)
         {
-            idfloat = value;
+            IDFloat = value;
+            Anim.SetFloat(Hash.IDFloat, IDFloat);         //Update the Animator
         }
 
         /// <summary>
@@ -270,8 +272,7 @@ namespace MalbersAnimations
             }
         }
 
-
-        List<Collider> _col_;       //Colliders to disable with animator
+        List<Collider> _col_ = new List<Collider>();       //Colliders to disable with animator
 
         /// <summary>
         /// Enable/Disable All Colliders on the animal. Avoid the Triggers
@@ -299,7 +300,7 @@ namespace MalbersAnimations
                 item.enabled = active;
             }
 
-            if (active) _col_ = null;
+            if (active) _col_ = new List<Collider>();
         }
 
         /// <summary>
@@ -350,7 +351,6 @@ namespace MalbersAnimations
                 if (CurrentAnimState.tagHash != Hash.Action && actionID <= 0)            //Don't play an action if you are already making one and if is on a Zone
                 {
                     Anim.CrossFade(actionName, 0.1f, 0);
-                    //OnAction.Invoke();
                 }
             }
             else
@@ -406,28 +406,55 @@ namespace MalbersAnimations
 
         IEnumerator GravityDrag(float value)
         {
-            yield return null;
-            _RigidBody.useGravity = true;
+            while (currentAnimState.tagHash != Hash.Fly)
+            {
+                yield return null;
+            }
             groundSpeed = 2;
-            _RigidBody.drag = value;
+
+            if (_RigidBody)
+            {
+                _RigidBody.useGravity = true;
+                _RigidBody.drag = value;
+            }
         }
 
         private IEnumerator ToggleJump()
         {
-            Jump = true;
-            yield return null;
-            yield return null;
+            for (int i = 0; i < 4; i++)
+            {
+                Jump = true;
+                yield return null;
+            }
+
             Jump = false;
+        }
+
+        internal IEnumerator C_Attacking(float time)
+        {
+            isAttacking = true;
+
+            for (int i = 0; i < 4; i++)
+            {
+                attack1 = true;
+                yield return null;
+            }
+
+            attack1 = false;
+
+            if (time > 0)
+            {
+                yield return new WaitForSeconds(time);
+                isAttacking = false;
+            }
         }
 
         private IEnumerator ToggleAction()
         {
-            action = true;
-            yield return null;
-            action = true;
-            yield return null;
-            action = true;
-            yield return null;
+            for (int i = 0; i < 4; i++){            
+                action = true;
+                yield return null;
+            }
             action = false;     //Reset Action     
 
             if (!RealAnimatorState(Hash.Action)) ActionID = -1; //Means that it could not make an action animation

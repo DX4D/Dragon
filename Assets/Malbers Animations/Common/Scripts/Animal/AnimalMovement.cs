@@ -45,6 +45,9 @@ namespace MalbersAnimations
             _transform = this.transform;                                         //Set Reference for the transform
             animalMesh = GetComponentInChildren<Renderer>();
 
+            if (_RigidBody) _RigidBody.isKinematic = false;                     //Some People set it as Kinematic and falling stop working (Just to make sure)
+           
+
             pivots = GetComponentsInChildren<Pivots>();                     //Pivots are Strategically Transform objects use to cast rays used to calculate the terrain inclination 
             scaleFactor = _transform.localScale.y;                          //TOTALLY SCALABE animal
             MovementReleased = true;
@@ -68,6 +71,23 @@ namespace MalbersAnimations
                     break;
             }
 
+            //Fixing the problems with the rigidbody and the animator
+            if (_RigidBody)
+            {
+                switch (Anim.updateMode)
+                {
+                    case AnimatorUpdateMode.Normal:
+                        _RigidBody.interpolation = RigidbodyInterpolation.Extrapolate;
+                        break;
+                    case AnimatorUpdateMode.AnimatePhysics:
+                        _RigidBody.interpolation = RigidbodyInterpolation.None;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+
             Attack_Triggers = GetComponentsInChildren<AttackTrigger>(true).ToList();        //Save all Attack Triggers.
 
             OptionalAnimatorParameters();                                                   //Enable Optional Animator Parameters on the Animator Controller;
@@ -78,7 +98,7 @@ namespace MalbersAnimations
         /// <summary>
         /// Setting the animal that flies when start
         /// </summary>
-        public virtual void Start_Flying()
+        protected virtual void Start_Flying()
         {
             if (hasFly && StartFlying && canFly)
             {
@@ -86,7 +106,7 @@ namespace MalbersAnimations
                 Fly = true;
                 Anim.Play("Fly", 0);
                 IsInAir = true;
-                _RigidBody.useGravity = false;
+                if (_RigidBody) _RigidBody.useGravity = false;
             }
         }
 
@@ -102,28 +122,6 @@ namespace MalbersAnimations
             if (MalbersTools.FindAnimatorParameter(Anim, AnimatorControllerParameterType.Bool, "Underwater")) hasUnderwater = true;
             if (MalbersTools.FindAnimatorParameter(Anim, AnimatorControllerParameterType.Float,"UpDown"))     hasUpDown = true;
         }
-
-        internal IEnumerator C_Attacking(float time)
-        {
-            isAttacking = true;
-
-            while (!RealAnimatorState(Hash.Tag_Attack))
-            {
-                yield return null;
-            }
-
-            //yield return null;
-            //yield return null;
-            //yield return null;
-            attack1 = false;
-
-            if (time > 0)
-            {
-                yield return new WaitForSeconds(time);
-                 isAttacking = false;
-            }
-        }
-
 
         /// <summary>
         /// Link all Parameters to the animator
@@ -148,6 +146,8 @@ namespace MalbersAnimations
 
                 Anim.SetInteger(Hash.IDAction, actionID);
                 Anim.SetInteger(Hash.IDInt, IDInt);                //The problem is that is always zero if you change it externally;
+
+
 
                 //Optional Animator Parameters
                 if (hasAttack2)         Anim.SetBool(Hash.Attack2, attack2);
@@ -229,33 +229,26 @@ namespace MalbersAnimations
 
             if (CurrentAnimState.tagHash != Hash.Locomotion) Turn = 0;                      //Set the turn to 0 if the current animation is not locomotion
 
-
             if (Fly) Turn = flySpeed.rotation;
-
             if (swim) Turn = swimSpeed.rotation;
             if (underwater) Turn = underWaterSpeed.rotation;
 
-            float clampDirection = Mathf.Clamp(direction, -1, 1);
+            float clampDirection = Mathf.Clamp(direction, -1, 1) * (movementAxis.z >= 0 ? 1 : -1);
 
-            if (movementAxis.z >= 0)                                                                   
-            {
-                _transform.Rotate(_transform.up, Turn * 2 * clampDirection * time);        //Rotate while going forward
-            }
-            else                                                                                    
-            {
-                _transform.Rotate(_transform.up, Turn * 2 * -clampDirection * time);      //Inverse Rotate while going backwards
-            }
+            _transform.Rotate(_transform.up, Turn * 2 * clampDirection * time);        //Rotate while going forward
 
+            //_RigidBody.MoveRotation(_RigidBody.rotation * Quaternion.Euler(0, clampDirection * Turn * time, 0));
 
             if (Fly || swim || stun || RealAnimatorState(Hash.Action)) return;      //Skip the code below if is in any of this states
           
 
             if (IsJumping() || fall)                                                //More Rotation when jumping and falling... in air rotation
             {
-                if (movementAxis.z >= 0)
-                    _transform.RotateAround(animalMesh.bounds.center, _transform.up, airRotation * direction * time);
-                else
-                    _transform.RotateAround(animalMesh.bounds.center, _transform.up, airRotation * -direction * time);
+
+                float amount = airRotation * direction * time * (movementAxis.z >= 0 ? 1 : -1);
+
+                
+                _transform.RotateAround(animalMesh.bounds.center, _transform.up, amount);
             }
         }
 
@@ -311,10 +304,12 @@ namespace MalbersAnimations
             Vector3 forward = ((transform.forward * speed) + (transform.up * movementAxis.y));
 
             if (forward.magnitude>1) forward.Normalize();
-           
 
-            _transform.position =
-              Vector3.Lerp(_transform.position, _transform.position + forward * amount / 5f, time);
+
+            //_RigidBody.MovePosition(Vector3.Lerp(_transform.position, _transform.position + forward * amount / 5f, time));
+
+
+            _transform.position = Vector3.Lerp(_transform.position, _transform.position + forward * amount / 5f, time);
 
             Anim.speed = Mathf.Lerp(Anim.speed, CurrentAnimatorSpeed * animatorSpeed, time * Anim_LerpSpeed);
         }
@@ -357,11 +352,14 @@ namespace MalbersAnimations
 
             platform_Pos = platform.position;
 
-            //// Keep the same relative rotation.
-            var eulerAngles = _transform.eulerAngles;
-            eulerAngles.y -= Mathf.DeltaAngle(platform.eulerAngles.y, platform_formAngle);
-            _transform.eulerAngles = eulerAngles;
-            platform_formAngle = platform.eulerAngles.y;
+            if (Anim.updateMode == AnimatorUpdateMode.AnimatePhysics)
+            {
+                //// Keep the same relative rotation.
+                var eulerAngles = _transform.eulerAngles;
+                eulerAngles.y -= Mathf.DeltaAngle(platform.eulerAngles.y, platform_formAngle);
+                _transform.eulerAngles = eulerAngles;
+                platform_formAngle = platform.eulerAngles.y;
+            }
         }
 
 
@@ -434,9 +432,6 @@ namespace MalbersAnimations
         /// </summary>
         protected virtual void FixPosition(float time)
         {
-            var transform_Position = _transform.position;
-            var transform_Rotation = _transform.rotation;
-            var transform_Up = _transform.up;
             slope = 0;
 
             //───────────────────────────────────────────────CHECK FOR ANIMATIONS THAT WILL SKIP THE REST OF THE METHOD ───────────────────────────────────────────────────────────────────────────────────
@@ -459,21 +454,23 @@ namespace MalbersAnimations
                 float AngleSlope = Vector3.Angle(surfaceNormal, UpVector);                              //Calculate the Angle of the Terrain
                 slope = AngleSlope / maxAngleSlope * ((pivot_Chest.Y > pivot_Hip.Y) ? 1 : -1);         //Normalize the AngleSlop by the MAX Angle Slope and make it positive(HighHill) or negative(DownHill)
 
-                Quaternion finalRot = Quaternion.FromToRotation(transform_Up, surfaceNormal) * _RigidBody.rotation;  //Calculate the orientation to Terrain  
+                Quaternion finalRot = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;  //Calculate the orientation to Terrain  
 
                 if (isInAir || IsJumping() || !backray)                                     // If the character is falling, jumping or swimming smoothly aling with the Up Vector
                 {
                     if (slope < 0 || (fall && !IsJumping()))                                //Don't Align when is UpHill falling or jumping
                     {
-                        finalRot = Quaternion.FromToRotation(transform_Up, UpVector) * _RigidBody.rotation;
-                        _transform.rotation = Quaternion.Lerp(transform_Rotation, finalRot, time * 5f);
+                        finalRot = Quaternion.FromToRotation(transform.up, UpVector) * transform.rotation;
+                        _transform.rotation = Quaternion.Lerp(transform.rotation, finalRot, time * 5f);
+                       //_RigidBody.MoveRotation(Quaternion.Lerp(transform_Rotation, finalRot, time * 5f));
                     }
                 }
                 else
                 {
                     if (!swim && slope < 1)
                     {
-                        _transform.rotation = Quaternion.Lerp(transform_Rotation, finalRot, time * 10f);                 //Align with Terrain!!! *** Important
+                        _transform.rotation = Quaternion.Lerp(transform.rotation, finalRot, time * 10f);                 //Align with Terrain!!! *** Important
+                        //_RigidBody.MoveRotation(Quaternion.Lerp(transform_Rotation, finalRot, time * 10f));
                     }
                     else { }
                 }
@@ -494,11 +491,11 @@ namespace MalbersAnimations
                 {
                     if (CurrentAnimState.tagHash == Hash.Locomotion)                            //If is in locomotion state
                     {
-                         _transform.position = transform_Position + new Vector3(0, diference, 0); //For Going DowHill otherWhise the aninal will float while going downHill
+                         _transform.position = transform.position + new Vector3(0, diference, 0); //For Going DowHill otherWhise the aninal will float while going downHill
                     }
                     else
                     {
-                        _transform.position = Vector3.Lerp(transform_Position, transform_Position + new Vector3(0, diference, 0), time * realsnap);
+                        _transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, diference, 0), time * realsnap);
                     }
                 }
             }
@@ -507,11 +504,11 @@ namespace MalbersAnimations
             {
                 if (!fall && !IsInAir)
                 {
-                    _transform.position = Vector3.Lerp(transform_Position, transform_Position + new Vector3(0, diference, 0), time * realsnap);
+                    _transform.position = Vector3.Lerp(transform.position, transform.position + new Vector3(0, diference, 0), time * realsnap);
 
                     if (diference < 0.1f)
                     {
-                        _transform.position = transform_Position + new Vector3(0, diference, 0); //for platforming
+                        _transform.position = transform.position + new Vector3(0, diference, 0); //for platforming
                     }
 
                     //_transform.position = transform_Position + new Vector3(0, diference, 0); //for platforming
@@ -524,7 +521,7 @@ namespace MalbersAnimations
                     || RealAnimatorState(Hash.Tag_Idle)
                     || RealAnimatorState(Hash.Tag_JumpEnd))
                 {
-                    _RigidBody.constraints = Still_Constraints;                 //Lock Y axis
+                  if (_RigidBody) _RigidBody.constraints = Still_Constraints;                 //Lock Y axis
                 }
             }
 
@@ -627,7 +624,7 @@ namespace MalbersAnimations
                     {
                         Swim = true;
                         OnSwim.Invoke();
-                        _RigidBody.constraints = Still_Constraints;
+                        if (_RigidBody) _RigidBody.constraints = Still_Constraints;
                     }
                 }
             }
@@ -638,7 +635,7 @@ namespace MalbersAnimations
 
                 float angleWater = Vector3.Angle(_transform.up, WaterHitCenter.normal);  //Calculates the angle of the water
 
-                Quaternion finalRot = Quaternion.FromToRotation(_transform.up, WaterHitCenter.normal) * _RigidBody.rotation;        //Calculate the rotation forward for the water
+                Quaternion finalRot = Quaternion.FromToRotation(_transform.up, WaterHitCenter.normal) * transform.rotation;        //Calculate the rotation forward for the water
 
                 //lerp rotate until is Aling with the Water
                 if (angleWater > 0.5f)
@@ -730,7 +727,7 @@ namespace MalbersAnimations
 
             if (shift) maxspeed++;                                                  //Increase the Speed with Shift pressed
 
-            if (!Fly && !Swim)                                                      //Dont check for slopes when swimming or flying
+            if (!Fly && !Swim && !IsJumping() )                                                      //Dont check for slopes when swimming or flying
             {
                 if (SlowSlopes && slope >= 0.5 && maxspeed > 1) maxspeed--;         //SlowDown When going UpHill
 
@@ -779,19 +776,16 @@ namespace MalbersAnimations
 
         void FixedUpdate()                              
         {
-
             if (CanGoUnderWater && underwater) return;                          //Dont calculate the methods below  if we are swimming
 
             if (anim.updateMode == AnimatorUpdateMode.AnimatePhysics)
             {
                 RayCasting();
                 FixPosition(Time.fixedDeltaTime);
-                AdditionalTurn(Time.fixedDeltaTime);                            //Apply Additional Turn movement
                 AdditionalSpeed(Time.fixedDeltaTime);                           //Apply Speed movement Turn movement
-
+                AdditionalTurn(Time.fixedDeltaTime);                            //Apply Additional Turn movement
             }
             
-           // UpdatePlatformMovement();                                         //It seems I don't need to calculate the Platform logic on the fixed updated (so YAY)
 
             Falling();
             if (fall)  Swimming(Time.fixedDeltaTime);                           //Calculate more acurately the Swiming if the animal is falling
@@ -807,7 +801,7 @@ namespace MalbersAnimations
             {
                 RayCasting();
                 FixPosition(Time.deltaTime);
-                AdditionalTurn(Time.deltaTime);                                 //Apply Additional Turn movement ON UPDATE
+                //AdditionalTurn(Time.deltaTime);                                 //Apply Additional Turn movement ON UPDATE
                 AdditionalSpeed(Time.deltaTime);                                //Apply Speed movement Turn movement ON UPDATE
             }
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Unka Mount
   m_EditorClassIdentifier: 
   time: 1
-  delay: 0.0001
+  delay: 1
   UsePosition: 1
   Position: {x: 1, y: 1, z: 1}
   PosCurve:

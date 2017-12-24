@@ -107,7 +107,7 @@ namespace MalbersAnimations.HAP
 
                         EditorGUILayout.Space();
 
-                        EditorGUILayout.LabelField("Animator Speed", EditorStyles.boldLabel);
+                        EditorGUILayout.LabelField("Rider Animator Speed", EditorStyles.boldLabel);
 
                         EditorGUILayout.BeginHorizontal();
                         EditorGUIUtility.labelWidth = 40;
@@ -121,6 +121,9 @@ namespace MalbersAnimations.HAP
                         M.FlyASpeed  = EditorGUILayout.FloatField(new GUIContent("Fly", "Riders Animator speed when is Flying"), M.FlyASpeed,GUILayout.MinWidth(10));
                         EditorGUILayout.EndHorizontal();
                         EditorGUIUtility.labelWidth = 0;
+
+                        EditorGUILayout.PropertyField(serializedObject.FindProperty("DebugSync"), new GUIContent("Debug Sync", ""));
+
                     }
                 }
                 EditorGUILayout.EndVertical();

@@ -9,7 +9,7 @@ namespace MalbersAnimations.HAP
     /// <summary>
     /// Logic for making any Animal Mountable
     /// </summary>
-    public class Mountable : MonoBehaviour , IAnimatorListener
+    public class Mountable : MonoBehaviour, IAnimatorListener
     {
 
         #region Components
@@ -30,7 +30,7 @@ namespace MalbersAnimations.HAP
 
         #region Straight Mount
         public bool straightSpine;                              //Activate this only for other animals but the horse 
-        public Vector3 pointOffset = new Vector3(0,0,0);
+        public Vector3 pointOffset = new Vector3(0, 0, 0);
         public float LowLimit = 45;
         public float HighLimit = 135;
 
@@ -58,6 +58,9 @@ namespace MalbersAnimations.HAP
         public float SwimASpeed = 1;
 
         protected float AnimatorSpeed = 1f;
+
+        public bool DebugSync = false;
+
         #endregion
 
         #region Mount Points
@@ -75,11 +78,11 @@ namespace MalbersAnimations.HAP
         #endregion
 
         #region Properties
-        public Transform MountPoint   { get { return ridersLink; } }    // Reference for the RidersLink Bone  
-        public Transform FootLeftIK   { get { return leftIK;     } }    // Reference for the LeftFoot correct position on the mount
-        public Transform FootRightIK  { get { return rightIK;    } }    // Reference for the RightFoot correct position on the mount
-        public Transform KneeLeftIK   { get { return leftKnee;   } }    // Reference for the LeftKnee correct position on the mount
-        public Transform KneeRightIK  { get { return rightKnee;  } }    // Reference for the RightKnee correct position on the mount
+        public Transform MountPoint { get { return ridersLink; } }    // Reference for the RidersLink Bone  
+        public Transform FootLeftIK { get { return leftIK; } }    // Reference for the LeftFoot correct position on the mount
+        public Transform FootRightIK { get { return rightIK; } }    // Reference for the RightFoot correct position on the mount
+        public Transform KneeLeftIK { get { return leftKnee; } }    // Reference for the LeftKnee correct position on the mount
+        public Transform KneeRightIK { get { return rightKnee; } }    // Reference for the RightKnee correct position on the mount
 
         public bool StraightSpine { get { return straightSpine; } }     // Reference for the RightKnee correct position on the mount
 
@@ -92,7 +95,7 @@ namespace MalbersAnimations.HAP
             {
                 return Quaternion.Euler(pointOffset);
             }
-        }     
+        }
 
         /// <summary>
         /// Is the animal Mounted
@@ -103,7 +106,7 @@ namespace MalbersAnimations.HAP
             {
                 if (value != mounted)
                 {
-                    mounted =  value;
+                    mounted = value;
                     if (mounted)
                     {
                         OnMounted.Invoke();    //Invoke the Event
@@ -227,7 +230,7 @@ namespace MalbersAnimations.HAP
             }
 
             if (pointOffset != Vector3.zero) straightRotation *= PointOffset;                                                    //Add the Spine Offset
-            
+
 
             MountPoint.localRotation = currentRotation;                                         //Restore the Current Local Rotation
 
@@ -333,6 +336,8 @@ namespace MalbersAnimations.HAP
                     AnimatorSpeed = FlyASpeed * Animal.flySpeed.animator;
                 }
 
+                AnimatorSpeed *= Animal.animatorSpeed;
+
                 ActiveRider.Anim.speed = Mathf.Lerp(ActiveRider.Anim.speed, AnimatorSpeed, time);
             }
         }
@@ -361,5 +366,43 @@ namespace MalbersAnimations.HAP
         //UnityEditor
         [HideInInspector] public bool ShowLinks;
         [HideInInspector] public bool ShowAnimatorSpeeds;
+
+
+#if UNITY_EDITOR
+        Transform headbone;
+        /// <summary>
+        /// DebugOptions
+        /// </summary> 
+        void OnDrawGizmos()
+        {
+            if (DebugSync && Application.isPlaying && ActiveRider != null && ActiveRider.IsRiding)
+            {
+                if (headbone == null) headbone = transform.FindGrandChild("Head");
+
+                if (Animal.CurrentAnimState.tagHash == Hash.Locomotion 
+                    || Animal.CurrentAnimState.tagHash == Hash.Swim 
+                    || Animal.CurrentAnimState.tagHash == Hash.Fly)                      //Search for syncron the locomotion state on the animal
+                {
+                    Gizmos.color = ((int)Animal.CurrentAnimState.normalizedTime) % 2 == 0 ? Color.white : Color.red;
+                    Gizmos.DrawSphere(headbone != null ? headbone.position + (Vector3.up * 0.2f * Animal.ScaleFactor) : transform.position, 0.05f * Animal.ScaleFactor);
+                    Gizmos.DrawWireSphere(headbone != null ? headbone.position + (Vector3.up * 0.2f * Animal.ScaleFactor) : transform.position, 0.05f * Animal.ScaleFactor);
+
+                    if (ActiveRider is Rider3rdPerson)
+                    {
+                        AnimatorStateInfo MountedStateInfo = ActiveRider.Anim.GetCurrentAnimatorStateInfo((ActiveRider as Rider3rdPerson).MountLayerIndex);
+
+                        Transform RiderHead = ActiveRider.Anim.GetBoneTransform(HumanBodyBones.Head);
+
+                        if (MountedStateInfo.tagHash == Hash.Locomotion)                      //Search for syncron the locomotion state on the animal
+                        {
+                            Gizmos.color = ((int)MountedStateInfo.normalizedTime) % 2 == 0 ? Color.white : Color.red;
+                            Gizmos.DrawSphere(RiderHead.position + (Vector3.up * 0.2f), 0.05f);
+                            Gizmos.DrawWireSphere(RiderHead.position + (Vector3.up * 0.2f), 0.05f);
+                        }
+                    }
+                }
+            }
+        }
+#endif
     }
 }

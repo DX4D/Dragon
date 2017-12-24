@@ -20,21 +20,24 @@ namespace MalbersAnimations
             rb = animator.GetComponent<Rigidbody>();
 
             animal.SetIntID(1);
-            animal.IsInAir = true;
+            animal.IsInAir = true;                                          //the  Animal is on the air
             animator.SetFloat(Hash.IDFloat, 1);
 
 
             MaxHeight = 0; //Resets MaxHeight
 
             animator.applyRootMotion = false;
-            rb.drag = 0;
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
-            rb.useGravity = true;
+            if (rb)
+            {
+                rb.drag = 0;
+                rb.constraints = RigidbodyConstraints.FreezeRotation;
+                rb.useGravity = true;
+            }
         }
 
         override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            if (!animator.IsInTransition(0) && rb.constraints != (RigidbodyConstraints) 112)
+            if (!animator.IsInTransition(0) && rb && rb.constraints != (RigidbodyConstraints) 112)
             {
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
             }

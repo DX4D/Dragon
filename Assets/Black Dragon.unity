@@ -16649,12 +16649,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.4159231, z: 0.53569925}
   m_Center: {x: 0.00014770404, y: 0.7007824, z: 0.07809708}
---- !u!114 &767395710 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114519132770689156, guid: 86d538fa4ecbaad4bb49e50876d6190b,
-    type: 2}
-  m_PrefabInternal: {fileID: 799092346}
-  m_Script: {fileID: 11500000, guid: bcca5b6ee6006244aadf2a9c6f75f0b3, type: 3}
 --- !u!1 &772216606
 GameObject:
   m_ObjectHideFlags: 0
@@ -16676,13 +16670,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 772216606}
-  m_LocalRotation: {x: -0, y: 0.00001388788, z: -0, w: -1}
-  m_LocalPosition: {x: -0.1, y: 1.4, z: 6.66}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 1.4, z: 7.57}
   m_LocalScale: {x: 0.76923096, y: 0.7692308, z: 0.76923096}
   m_Children: []
   m_Father: {fileID: 1407093216}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -118.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788276865
 GameObject:
   m_ObjectHideFlags: 0
@@ -17674,6 +17668,51 @@ MonoBehaviour:
   height: 2
   rotationDamping: 1
   heightDamping: 1
+--- !u!114 &1077239365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077239361}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34117dad236f34e94aeede23f2028160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseButtonToUse: 1
+  target: {fileID: 88507868}
+  distance: 0
+  xSpeed: 120
+  ySpeed: 120
+  scrollrate: 3
+  yMinLimit: -20
+  yMaxLimit: 80
+  distanceMin: 0.5
+  distanceMax: 15
+  Offset: {x: 0, y: 0, z: 0}
+  AlwaysOn: 1
+  singleTouchOrbiting: 0
+  pinchToZoom: 0
+  Clip: 0
+  TargetBone: 
+--- !u!114 &1077239366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077239361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1407c0f7ec86e2244b0d6279373903e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 88507868}
+  offset: {x: 0, y: 1, z: 0}
+  invertLookAxis: 0
+  lookSensitivity: 1
+  lookHorizontalAngle: 124
+  minCameraHeight: 1
+  maxCameraHeight: 64
 --- !u!1 &1143845467
 GameObject:
   m_ObjectHideFlags: 0
@@ -18006,7 +18045,7 @@ Prefab:
         type: 2}
       propertyPath: AnimalStored
       value: 
-      objectReference: {fileID: 767395710}
+      objectReference: {fileID: 1407093204}
     - target: {fileID: 114000012814007534, guid: 5d02e38bbb9c0e047a8e5076bf964489,
         type: 2}
       propertyPath: OnStartDismounting.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -18971,6 +19010,12 @@ Transform:
   m_Father: {fileID: 1757678878}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1407093204 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114519132770689156, guid: 6cc757af770e4c24d8d51e24e58813fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1841385862}
+  m_Script: {fileID: 11500000, guid: bcca5b6ee6006244aadf2a9c6f75f0b3, type: 3}
 --- !u!95 &1407093215 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95879410723770748, guid: 6cc757af770e4c24d8d51e24e58813fc,
@@ -20867,6 +20912,31 @@ Prefab:
         type: 2}
       propertyPath: StartSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114347589299455332, guid: 6cc757af770e4c24d8d51e24e58813fc,
+        type: 2}
+      propertyPath: flySpeed.animator
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114347589299455332, guid: 6cc757af770e4c24d8d51e24e58813fc,
+        type: 2}
+      propertyPath: runSpeed.animator
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114347589299455332, guid: 6cc757af770e4c24d8d51e24e58813fc,
+        type: 2}
+      propertyPath: trotSpeed.animator
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 54708000277882800, guid: 6cc757af770e4c24d8d51e24e58813fc,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 54708000277882800, guid: 6cc757af770e4c24d8d51e24e58813fc,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cc757af770e4c24d8d51e24e58813fc, type: 2}
